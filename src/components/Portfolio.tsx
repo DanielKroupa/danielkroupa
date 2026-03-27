@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "Modernizace webu",
     description:
-      "Ze starého webu pro firmu BOMA Úklid s.r.o. jsem vytvořil moderní, rychlý a responzivní web s důrazem na uživatelskou přívětivost a zkvalitnění SEO.",
+      "Ze starého webu pro firmu BOMA Úklid s.r.o. jsem vytvořil moderní, rychlý a responzivní web s důrazem na uživatelskou přívětivost, který odpovídá moderním potřebám",
     image: "/public/img/boma-uklid-preview.png",
     tech: ["Redesign", "SEO", "Responzivita", "HTPPS"],
     link: "https://boma.kvalitne.cz",
@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     title: "Zlepšení SEO pro web",
     description:
-      "Firmě POMP STAV s.r.o jsem vylepšil SEO pro lepší umístění v prvních příčkách výsledků ve vyhledávačích (Google, Bing, Seznam, apod.).",
+      "Firmě POMP STAV s.r.o jsem vylepšil SEO, aby stránky byly vidět v prvních příčkách výsledků vyhledávání (Google, Bing, Seznam, apod.).",
     image: "/public/img/pompstav-preview.png",
     tech: ["SEO"],
     link: "https://pompstav.cz",

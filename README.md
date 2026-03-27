@@ -17,6 +17,41 @@ To build this application for production:
 npm run build
 ```
 
+## Deployment (Vercel + Nitro)
+
+This project is configured for deployment on Vercel using Nitro.
+
+### 1. Vercel Project Settings
+
+- Framework Preset: Other
+- Install Command: `npm ci`
+- Build Command: `npm run build`
+- Output Directory: leave empty (Nitro uses `.output` internally)
+- Node.js Version: 20.x or newer
+
+### 2. Environment Variables
+
+Set these variables in Vercel for both Preview and Production:
+
+- `RESEND_API_KEY`
+- `CONTACT_FROM_EMAIL`
+- `CONTACT_TO_EMAIL`
+
+Important:
+
+- `CONTACT_FROM_EMAIL` must be a verified sender/domain in Resend
+- in production, `CONTACT_FROM_EMAIL` must not be `onboarding@resend.dev`
+
+### 3. Verify Before Deploy
+
+```bash
+npm ci
+npm run test
+npm run build
+```
+
+After build, make sure Nitro output is generated in `.output`.
+
 ## Testing
 
 This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:

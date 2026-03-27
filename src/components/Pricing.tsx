@@ -13,28 +13,36 @@ const pricingOptions = [
       "Cca 1-3 stránky",
       "Kontaktní formulář",
       "Integrace Google Analytics",
+      "Integrace GDPR",
+      "EAA ready",
+      "Cookies lišta",
     ],
-    popular: false,
+    popular: true,
   },
   {
     title: "CMS web",
     description: "Webové stránky spravovatelné uživatelem",
     features: [
-      "Administrace obsahu",
-      "Více stránek a sekcí",
-      "Blog/aktuality",
+      "Vše z prezentačního webu",
       "Rozšířené SEO",
+      "Více stránek a sekcí",
+      "Administrace obsahu",
+      "Blog/aktuality",
+      "Plánování publikace obsahu",
     ],
-    popular: true,
+    popular: false,
   },
   {
     title: "Webová aplikace",
-    description: "Řešení na míru vašim potřebám",
+    description: "Řešení šité na míru vašim potřebám",
     features: [
-      "Vlastní funkcionality",
-      "Integrace API",
-      "Dashboard a reporty",
-      "Podpora a údržba",
+      "Digitalizace a automatizace procesů",
+      "Napojení na stávající systémy",
+      "Připraveno pro růst a další rozšiřování",
+      "Administrační systém",
+      "Vícejazyčné texty",
+      "Rozšířené GDPR",
+      "... a mnoho dalšího",
     ],
     popular: false,
   },
@@ -81,7 +89,7 @@ export function PricingSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className={`relative rounded-2xl border bg-card/70 p-8 transition-all ${
+              className={`relative flex h-full flex-col rounded-2xl border bg-card/70 p-8 transition-all ${
                 option.popular
                   ? "border-brand-primary shadow-lg shadow-brand-primary/20"
                   : "border-border hover:border-brand-secondary/40"
@@ -121,7 +129,7 @@ export function PricingSection() {
 
               <button
                 onClick={scrollToContact}
-                className={`w-full py-3 rounded-lg transition-all font-semibold ${
+                className={`mt-auto w-full rounded-lg py-3 font-semibold transition-all ${
                   option.popular
                     ? "bg-brand-primary text-primary-foreground shadow-lg shadow-brand-primary/30 hover:bg-brand-primary-strong"
                     : "bg-secondary text-secondary-foreground hover:bg-accent"
