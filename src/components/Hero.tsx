@@ -126,7 +126,7 @@ export function HeroSection() {
             className="relative hidden lg:block"
           >
             <div className="relative">
-              <div className="w-3/4 rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-8 shadow-2xl">
+              <div className="xl:w-2/3 min-[1920px]:w-3/4 rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-8 shadow-2xl">
                 <div className="relative overflow-hidden rounded-lg shadow-lg">
                   <Image
                     width={480}
