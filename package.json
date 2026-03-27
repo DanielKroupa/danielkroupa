@@ -9,8 +9,8 @@
     "dev": "vite dev --port 3000",
     "build": "vite build && nitro build",
     "preview": "vite preview",
-    "preview:ssr": "npm run build && node .output/server/index.mjs",
-    "start:ssr": "node .output/server/index.mjs",
+    "preview:ssr": "npm run build && nitro preview",
+    "start:ssr": "nitro preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
