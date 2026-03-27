@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Modernizace webu",
     description:
       "Ze starého webu pro firmu BOMA Úklid s.r.o. jsem vytvořil moderní, rychlý a responzivní web s důrazem na uživatelskou přívětivost, který odpovídá moderním potřebám",
-    image: "/public/img/boma-uklid-preview.png",
+    image: "/img/boma-uklid-preview.png",
     tech: ["Redesign", "SEO", "Responzivita", "HTPPS"],
     link: "https://boma.kvalitne.cz",
   },
@@ -24,7 +24,7 @@ const projects: Project[] = [
     title: "Zlepšení SEO pro web",
     description:
       "Firmě POMP STAV s.r.o jsem vylepšil SEO, aby stránky byly vidět v prvních příčkách výsledků vyhledávání (Google, Bing, Seznam, apod.).",
-    image: "/public/img/pompstav-preview.png",
+    image: "/img/pompstav-preview.png",
     tech: ["SEO"],
     link: "https://pompstav.cz",
   },
@@ -32,14 +32,14 @@ const projects: Project[] = [
     title: "Prezentační web",
     description:
       "Vytvořil jsem pro živnostníka jednoduchý prezentační web, který slouží převážně jako online vizitka s ukázkou nabízených služeb.",
-    image: "/public/img/zednik-zlin-preview.png",
+    image: "/img/zednik-zlin-preview.png",
     tech: ["Vývoj webu"],
   },
   {
     title: "Prezentační web",
     description:
       "Díky spolupráci s klientem se přetvořila jeho vize mít online vizitku na funkční a moderní webové řešení. Web nabízí psychologické služby, poradenství a možnost využití služeb formou objednávkového formuláře.",
-    image: "/public/img/lukas-rihacek-preview.png",
+    image: "/img/lukas-rihacek-preview.png",
     tech: ["Vývoj webu", "Design", "SEO", "Responzivita"],
   },
 ];
