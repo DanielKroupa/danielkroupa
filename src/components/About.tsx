@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CheckCircle2, Zap, Shield, Heart } from "lucide-react";
+import { Zap, Shield, Heart } from "lucide-react";
 
 const values = [
   {

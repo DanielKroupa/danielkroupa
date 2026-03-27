@@ -9,6 +9,9 @@
     "dev": "vite dev --port 3000",
     "build": "vite build && nitro build",
     "preview": "vite preview",
+    "preview:ssr": "npm run build && node .output/server/index.mjs",
+    "start:ssr": "node .output/server/index.mjs",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
   "engines": {
@@ -33,7 +36,6 @@
     "react": "^19.2.0",
     "react-day-picker": "^9.14.0",
     "react-dom": "^19.2.0",
-    "react-hook": "^0.0.1",
     "react-hook-form": "^7.71.2",
     "react-icons": "^5.6.0",
     "resend": "^6.9.3",
