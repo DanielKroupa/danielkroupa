@@ -1,23 +1,24 @@
 import { motion } from "motion/react";
-import { Zap, Shield, Heart } from "lucide-react";
+import { BookOpen, Coffee, Smile } from "lucide-react";
 
 const values = [
   {
-    icon: Zap,
-    title: "Rychlý a efektivní vývoj",
+    icon: Coffee,
+    title: "Nejlépe přemýšlím v klidu",
     description:
-      "Dodržování termínů a efektivní komunikace po celou dobu projektu.",
+      "Dobrá káva, čistá hlava a prostor na soustředění dělají velký rozdíl.",
   },
   {
-    icon: Shield,
-    title: "Spolehlivost a kvalita",
-    description: "Čistý kód, testování a důraz na detail v každém projektu.",
+    icon: BookOpen,
+    title: "Mám rád jednoduchost",
+    description:
+      "Věci bez zbytečného chaosu mi dávají smysl v práci i běžném dni.",
   },
   {
-    icon: Heart,
-    title: "Osobní přístup",
+    icon: Smile,
+    title: "Lidskost je pro mě základ",
     description:
-      "Každý projekt je unikátní a zaslouží si individuální přístup.",
+      "Férovost, upřímnost a humor beru jako přirozenou součást spolupráce.",
   },
 ];
 
@@ -43,23 +44,11 @@ export function AboutSection() {
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzM0OTc0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Web Developer"
+                alt="Portrét Daniela"
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />
             </div>
-
-            {/* Floating badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="absolute -right-6 -bottom-6 rounded-2xl bg-linear-to-br from-brand-primary to-brand-secondary p-6 text-primary-foreground shadow-2xl"
-            >
-              <div className="text-4xl font-bold">8+</div>
-              <div className="text-sm opacity-90">let zkušeností</div>
-            </motion.div>
           </motion.div>
 
           {/* Right - Content */}
@@ -74,9 +63,9 @@ export function AboutSection() {
             </h2>
 
             <p className="mb-8 text-xl leading-relaxed text-brand-text-soft">
-              Jsem Daniel a tvorbou webových stránek se zabývám komerčně již od
-              roku 2018. Díky nasbíraným zkušenostem a proklientskému přístupu
-              měním vize a řešení na skutečné fungující weby.
+              Jmenuji se Daniel. Ve volném čase rád chodím na procházky, věnuji
+              se čtení a fitness, které mě udržuje v kondici. Věřím, že když je
+              lidská stránka v rovnováze, jde všechno ostatní mnohem snáz.
             </p>
 
             <div className="space-y-4 mb-8">

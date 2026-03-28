@@ -18,6 +18,20 @@ export function HeroSection() {
     }
   };
 
+  const scrollToProjects = () => {
+    const element = document.getElementById("portfolio");
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="relative flex items-center justify-center overflow-hidden py-10 md:py-12">
       {/* Background gradient */}
@@ -94,6 +108,12 @@ export function HeroSection() {
                   className="group-hover:translate-x-1 transition-transform"
                   size={20}
                 />
+              </button>
+              <button
+                onClick={scrollToProjects}
+                className="group flex cursor-pointer items-center justify-center border-brand-primary border-2 text-foreground gap-2 rounded-lg px-8 py-4 shadow-lg transition-all hover:scale-105"
+              >
+                Ukázat projekty
               </button>
             </motion.div>
 

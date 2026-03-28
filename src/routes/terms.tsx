@@ -58,7 +58,7 @@ export function TermsPage() {
                 stran při poskytování služeb webového vývoje.
               </p>
               <p className="text-sm text-brand-text-soft">
-                Poslední aktualizace: 14. března 2026
+                Poslední aktualizace: 28. března 2026
               </p>
             </div>
 
@@ -259,6 +259,13 @@ export function TermsPage() {
                   Změny budou zveřejněny na těchto stránkách. Pro již
                   probíhající projekty platí podmínky platné v době uzavření
                   smlouvy.
+                </p>
+                <p>
+                  Ochrana osobních údajů, zpracování údajů z kontaktního
+                  formuláře a pravidla pro cookies se řídí samostatným
+                  dokumentem „Ochrana osobních údajů“. Souhlas se zpracováním
+                  údajů v kontaktním formuláři slouží pouze pro vyřízení
+                  poptávky a je oddělen od volby cookies.
                 </p>
               </div>
             </section>

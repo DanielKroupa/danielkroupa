@@ -59,7 +59,7 @@ export function PrivacyPage() {
                 údajů v případě, že se rozhodnete používat naše služby.
               </p>
               <p className="text-sm text-brand-text-soft">
-                Poslední aktualizace: 14. března 2026
+                Poslední aktualizace: 28. března 2026
               </p>
             </div>
 
@@ -96,6 +96,12 @@ export function PrivacyPage() {
                   <li>Zasílání důležitých aktualizací o vašem projektu</li>
                   <li>Zlepšování našich služeb</li>
                 </ul>
+                <p>
+                  Právním základem zpracování je zejména plnění opatření před
+                  uzavřením smlouvy na vaši žádost a oprávněný zájem na
+                  bezpečném provozu webu. U volitelných cookies je právním
+                  základem váš souhlas.
+                </p>
               </div>
             </section>
 
@@ -120,11 +126,33 @@ export function PrivacyPage() {
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  Náš web může používat cookies pro zlepšení uživatelské
-                  zkušenosti. Cookies jsou malé textové soubory, které se
-                  ukládají ve vašem zařízení. Můžete nastavit svůj prohlížeč
-                  tak, aby odmítl všechny cookies nebo aby indikoval, kdy je
-                  cookie odesílán.
+                  Cookies jsou malé textové soubory ukládané ve vašem zařízení.
+                  Na našem webu používáme tyto kategorie:
+                </p>
+                <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
+                  <li>
+                    <strong>Nezbytné cookies:</strong> zajišťují základní
+                    fungování webu. Tyto cookies jsou aktivní vždy.
+                  </li>
+                  <li>
+                    <strong>Analytické cookies:</strong> Google Analytics 4 pro
+                    měření návštěvnosti a výkonu webu. Aktivují se až po vašem
+                    výslovném souhlasu.
+                  </li>
+                  <li>
+                    <strong>Preferenční cookies:</strong> slouží pro budoucí
+                    ukládání uživatelských preferencí. Aktivují se jen po
+                    souhlasu.
+                  </li>
+                </ul>
+                <p>
+                  Volitelné cookies (analytické a preferenční) jsou při první
+                  návštěvě ve výchozím stavu vypnuté. Váš souhlas ukládáme na
+                  dobu 6 měsíců a poté vás znovu požádáme o volbu.
+                </p>
+                <p>
+                  Nastavení můžete kdykoli změnit přes tlačítko „Nastavení
+                  cookies“ na webu nebo přes odkaz v patičce.
                 </p>
               </div>
             </section>
@@ -137,9 +165,19 @@ export function PrivacyPage() {
                 <p>
                   Vaše osobní údaje neprodáváme, nepronajímáme ani nesdílíme s
                   třetími stranami, s výjimkou případů nezbytných pro
-                  poskytování našich služeb (např. hosting poskytovatelé) nebo
-                  pokud to vyžaduje zákon.
+                  poskytování našich služeb nebo pokud to vyžaduje zákon.
                 </p>
+                <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
+                  <li>
+                    <strong>Google Ireland Limited / Google LLC</strong> -
+                    analytické měření (pouze po udělení souhlasu s analytickými
+                    cookies).
+                  </li>
+                  <li>
+                    <strong>Resend, Inc.</strong> - odeslání kontaktního
+                    formuláře a potvrzovacích emailů.
+                  </li>
+                </ul>
               </div>
             </section>
 

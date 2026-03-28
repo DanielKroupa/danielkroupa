@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "Prezentační web",
     description:
-      "Vytvořil jsem pro živnostníka jednoduchý prezentační web, který slouží převážně jako online vizitka s ukázkou nabízených služeb.",
+      "Vytvořil jsem pro živnostníka prezentační web pro zviditelnění jeho služeb v oblasti zednických prací.",
     image: "/img/zednik-zlin-preview.png",
     tech: ["Vývoj webu"],
   },

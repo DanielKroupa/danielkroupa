@@ -1,8 +1,10 @@
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
+import { CookieConsentLayer } from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { CookieConsentProvider } from "../hooks/useCookieConsent";
 
 import appCss from "../styles.css?url";
 
@@ -34,26 +36,29 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="cs" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <HeadContent />
       </head>
       <body className="mx-auto font-sans antialiased wrap-anywhere selection:bg-brand-secondary/30 selection:text-foreground">
-        <Header />
-        {children}
-        <Footer />
-        <TanStackDevtools
-          config={{
-            position: "bottom-right",
-          }}
-          plugins={[
-            {
-              name: "Tanstack Router",
-              render: <TanStackRouterDevtoolsPanel />,
-            },
-          ]}
-        />
+        <CookieConsentProvider>
+          <Header />
+          {children}
+          <Footer />
+          <CookieConsentLayer />
+          <TanStackDevtools
+            config={{
+              position: "bottom-right",
+            }}
+            plugins={[
+              {
+                name: "Tanstack Router",
+                render: <TanStackRouterDevtoolsPanel />,
+              },
+            ]}
+          />
+        </CookieConsentProvider>
         <Scripts />
       </body>
     </html>

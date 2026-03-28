@@ -216,6 +216,7 @@ export function ContactSection() {
                   id="email"
                   {...register("email")}
                   aria-invalid={Boolean(errors.email)}
+                  autoComplete="email"
                   className="w-full rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-brand-secondary focus:outline-none transition-colors"
                   placeholder="jan@email.cz"
                 />
@@ -239,6 +240,7 @@ export function ContactSection() {
                     },
                   })}
                   aria-invalid={Boolean(errors.phone)}
+                  autoComplete="tel"
                   className="w-full rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-brand-secondary focus:outline-none transition-colors"
                   placeholder="+420 123 456 789"
                 />

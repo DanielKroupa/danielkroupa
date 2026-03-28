@@ -1,8 +1,10 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
+import { useCookieConsent } from "#/hooks/useCookieConsent";
 
 export function Footer() {
   const location = useLocation();
+  const { openSettings } = useCookieConsent();
 
   const scrollToSection = (id: string) => {
     if (location.pathname !== "/") {
@@ -84,6 +86,15 @@ export function Footer() {
                 >
                   Obchodni podminky
                 </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={openSettings}
+                  className="text-muted-foreground transition-colors hover:text-brand-secondary"
+                >
+                  Nastaveni cookies
+                </button>
               </li>
             </ul>
           </div>

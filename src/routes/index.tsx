@@ -16,8 +16,8 @@ function App() {
       <ServicesSection />
       <ProcessSection />
       <PortfolioSection />
-      <AboutSection />
       <PricingSection />
+      <AboutSection />
       <ContactSection />
     </main>
   );
