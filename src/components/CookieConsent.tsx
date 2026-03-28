@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Settings2, ShieldCheck, X, Cookie } from "lucide-react";
+import { ShieldCheck, X, Cookie } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { useCookieConsent } from "#/hooks/useCookieConsent";
