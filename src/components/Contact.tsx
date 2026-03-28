@@ -149,7 +149,7 @@ export function ContactSection() {
 
             <div className="rounded-2xl border border-brand-secondary/30 bg-linear-to-br from-brand-secondary/10 to-brand-primary/10 p-6">
               <h4 className="mb-3 font-semibold text-foreground">
-                Rychlá odpověď zaručena
+                Rychlá odpověď do 1 dne.
               </h4>
               <p className="text-sm leading-relaxed text-brand-text-soft">
                 Odpovídám na všechny dotazy do 24 hodin. Preferujete telefonát?
