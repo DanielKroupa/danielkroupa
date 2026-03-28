@@ -6,7 +6,7 @@ const values = [
     icon: Coffee,
     title: "Nejlépe přemýšlím v klidu",
     description:
-      "Dobrá káva, čistá hlava a prostor na soustředění dělají velký rozdíl.",
+      "Dobrý čaj, čistá hlava a prostor na soustředění dělají zásadní rozdíl.",
   },
   {
     icon: BookOpen,
