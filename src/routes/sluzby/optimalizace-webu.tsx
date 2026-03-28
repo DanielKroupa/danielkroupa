@@ -4,6 +4,13 @@ import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/optimalizace-webu")({
   component: WebsiteOptimizationPage,
+  head: () => ({
+    meta: [
+      {
+        title: "Optimalizace webu | Daniel Kroupa",
+      },
+    ],
+  }),
 });
 
 export function WebsiteOptimizationPage() {

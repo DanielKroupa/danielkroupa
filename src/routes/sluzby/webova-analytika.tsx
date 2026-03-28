@@ -4,6 +4,13 @@ import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/webova-analytika")({
   component: WebAnalyticsPage,
+  head: () => ({
+    meta: [
+      {
+        title: "Webová analytika | Daniel Kroupa",
+      },
+    ],
+  }),
 });
 
 export function WebAnalyticsPage() {

@@ -14,6 +14,13 @@ import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
 import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/vyvoj-webu")({
+  head: () => ({
+    meta: [
+      {
+        title: "Vývoj webů na míru | Daniel Kroupa",
+      },
+    ],
+  }),
   component: WebDevelopmentPage,
 });
 

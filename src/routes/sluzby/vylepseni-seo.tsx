@@ -4,6 +4,13 @@ import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/vylepseni-seo")({
   component: SeoImprovementsPage,
+  head: () => ({
+    meta: [
+      {
+        title: "Vylepšení SEO | Daniel Kroupa",
+      },
+    ],
+  }),
 });
 
 export function SeoImprovementsPage() {

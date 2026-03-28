@@ -4,6 +4,13 @@ import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/redesign")({
   component: RedesignPage,
+  head: () => ({
+    meta: [
+      {
+        title: "Redesign webu | Daniel Kroupa",
+      },
+    ],
+  }),
 });
 
 export function RedesignPage() {
