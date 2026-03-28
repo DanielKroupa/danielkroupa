@@ -34,7 +34,7 @@ export function Footer() {
               Daniel<span className="text-brand-primary">Kroupa</span>
             </h3>
             <p className="text-muted-foreground">
-              Moderni webove reseni pro vase podnikani.
+              Moderní webové řešení pro vaše podnikání.
             </p>
           </div>
 
@@ -69,14 +69,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 font-semibold text-foreground">Pravni</h4>
+            <h4 className="mb-4 font-semibold text-foreground">
+              Právní zásady
+            </h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/privacy"
                   className="text-muted-foreground transition-colors hover:text-brand-secondary"
                 >
-                  Ochrana osobnich udaju
+                  Ochrana osobních údajů
                 </Link>
               </li>
               <li>
@@ -84,16 +86,16 @@ export function Footer() {
                   to="/terms"
                   className="text-muted-foreground transition-colors hover:text-brand-secondary"
                 >
-                  Obchodni podminky
+                  Obchodní podmínky
                 </Link>
               </li>
               <li>
                 <button
                   type="button"
                   onClick={openSettings}
-                  className="text-muted-foreground transition-colors hover:text-brand-secondary"
+                  className="text-muted-foreground transition-colors hover:text-brand-secondary cursor-pointer"
                 >
-                  Nastaveni cookies
+                  Nastavení cookies
                 </button>
               </li>
             </ul>
@@ -105,19 +107,19 @@ export function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={16} />
                 <a
-                  href="tel:+420123456789"
+                  href="tel:+420605465600"
                   className="transition-colors hover:text-brand-secondary"
                 >
-                  +420 123 456 789
+                  +420 605 465 600
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={16} />
                 <a
-                  href="mailto:info@webdev.cz"
+                  href="mailto:kroupa.daniel98@seznam.cz"
                   className="transition-colors hover:text-brand-secondary"
                 >
-                  info@webdev.cz
+                  kroupa.daniel98@seznam.cz
                 </a>
               </li>
             </ul>
@@ -125,7 +127,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-muted-foreground">
-          <p>&copy; 2026 WebDev. Vsechna prava vyhrazena.</p>
+          <p>&copy; 2026 Daniel Kroupa. Všechna práva vyhrazena.</p>
         </div>
       </div>
     </footer>

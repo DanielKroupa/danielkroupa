@@ -38,7 +38,7 @@ const projects: Project[] = [
   {
     title: "Prezentační web",
     description:
-      "Díky spolupráci s klientem se přetvořila jeho vize mít online vizitku na funkční a moderní webové řešení. Web nabízí psychologické služby, poradenství a možnost využití služeb formou objednávkového formuláře.",
+      "Díky spolupráci s klientem se přetvořila jeho vize mít online vizitku na funkční a moderní webovou prezentaci. Web nabízí psychologické služby, poradenství a možnost využití služeb formou objednávkového formuláře.",
     image: "/img/lukas-rihacek-preview.png",
     tech: ["Vývoj webu", "Design", "SEO", "Responzivita"],
   },
