@@ -29,7 +29,6 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Proces", type: "section", sectionId: "proces" },
   { label: "Projekty", type: "section", sectionId: "portfolio" },
   { label: "O mně", type: "section", sectionId: "o-mne" },
-  { label: "Kontakt", type: "section", sectionId: "kontakt" },
 ];
 
 export function Navbar({
@@ -43,6 +42,7 @@ export function Navbar({
   const location = useLocation();
   const servicesMenuRef = useRef<HTMLDivElement | null>(null);
   const servicesButtonRef = useRef<HTMLButtonElement | null>(null);
+  const mobileSectionScrollTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     setIsServicesDesktopOpen(false);
@@ -76,10 +76,32 @@ export function Navbar({
     };
   }, []);
 
+  useEffect(
+    () => () => {
+      if (mobileSectionScrollTimeoutRef.current !== null) {
+        window.clearTimeout(mobileSectionScrollTimeoutRef.current);
+      }
+    },
+    [],
+  );
+
   const handleSectionClick = (sectionId: string, closeMobileMenu: boolean) => {
+    if (closeMobileMenu && location.pathname === "/") {
+      onCloseMobileMenu();
+      if (mobileSectionScrollTimeoutRef.current !== null) {
+        window.clearTimeout(mobileSectionScrollTimeoutRef.current);
+      }
+      // Wait for the mobile menu collapse animation before scrolling.
+      mobileSectionScrollTimeoutRef.current = window.setTimeout(() => {
+        onScrollToSection(sectionId);
+      }, 220);
+      return;
+    }
+
     if (closeMobileMenu) {
       onCloseMobileMenu();
     }
+
     onScrollToSection(sectionId);
   };
 
@@ -87,6 +109,7 @@ export function Navbar({
     if (item.type === "section") {
       return (
         <button
+          type="button"
           key={item.label}
           onClick={() => handleSectionClick(item.sectionId, mobile)}
           className={`cursor-pointer text-foreground transition-colors hover:text-brand-secondary ${mobile ? "text-left" : ""}`}
@@ -109,7 +132,7 @@ export function Navbar({
   };
 
   const ctaClass =
-    "rounded-lg bg-brand-primary px-6 py-2 text-primary-foreground transition-all hover:bg-brand-primary-strong";
+    "rounded-lg cursor-pointer bg-brand-primary px-6 py-2 text-primary-foreground transition-all hover:bg-brand-primary-strong";
   const navLinkClass =
     "cursor-pointer text-foreground transition-colors hover:text-brand-secondary";
 
@@ -185,6 +208,7 @@ export function Navbar({
 
           {NAV_ITEMS.map((item) => renderNavItem(item, false))}
           <button
+            type="button"
             onClick={() => handleSectionClick("kontakt", false)}
             className={`${ctaClass} hover:scale-105`}
           >
@@ -193,6 +217,7 @@ export function Navbar({
         </div>
 
         <button
+          type="button"
           onClick={onToggleMobileMenu}
           className="text-foreground md:hidden"
           aria-expanded={isMobileMenuOpen}
@@ -213,6 +238,7 @@ export function Navbar({
             <div className="flex flex-col gap-4 pt-4 pb-2">
               <div>
                 <button
+                  type="button"
                   onClick={() => setIsServicesMobileOpen((isOpen) => !isOpen)}
                   className={`${navLinkClass} text-left w-full flex items-center justify-between`}
                   aria-expanded={isServicesMobileOpen}
@@ -256,6 +282,7 @@ export function Navbar({
 
               {NAV_ITEMS.map((item) => renderNavItem(item, true))}
               <button
+                type="button"
                 onClick={() => handleSectionClick("kontakt", true)}
                 className={`${ctaClass} text-left`}
               >
