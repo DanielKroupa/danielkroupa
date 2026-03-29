@@ -151,7 +151,7 @@ export function HeroSection() {
                   <Image
                     width={480}
                     height={711}
-                    src="/img/20260315_2039_Modern Web Developer_remix_01kksg394nep0btjsyq7gvsnse.png"
+                    src="/img/20260315_2039_Modern Web Developer_remix_01kksg394nep0btjsyq7gvsnse.webp"
                     alt="Modern Web Dashboard"
                     className="block w-full"
                   />

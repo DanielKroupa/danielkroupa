@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { SERVICE_DEFINITIONS } from "#/utils/services";
+import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,6 +24,7 @@ function InputError({ message }: { message?: string }) {
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const { openPrivacy } = usePrivacyOverlay();
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -316,12 +317,16 @@ export function ContactSection() {
                   />
                   <span className="cursor-pointer">
                     Souhlasím se{" "}
-                    <Link
-                      to="/privacy"
+                    <button
+                      type="button"
+                      onClick={(event) => {
+                        event.preventDefault();
+                        openPrivacy();
+                      }}
                       className="text-brand-secondary underline transition-colors hover:text-brand-primary"
                     >
                       zpracováním osobních údajů
-                    </Link>{" "}
+                    </button>{" "}
                     pro účely vyřízení poptávky.
                   </span>
                 </label>

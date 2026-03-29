@@ -1,10 +1,12 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { useCookieConsent } from "#/hooks/useCookieConsent";
+import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
 
 export function Footer() {
   const location = useLocation();
   const { openSettings } = useCookieConsent();
+  const { openPrivacy } = usePrivacyOverlay();
 
   const scrollToSection = (id: string) => {
     if (location.pathname !== "/") {
@@ -74,12 +76,13 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/privacy"
+                <button
+                  type="button"
+                  onClick={openPrivacy}
                   className="text-muted-foreground transition-colors hover:text-brand-secondary"
                 >
                   Ochrana osobních údajů
-                </Link>
+                </button>
               </li>
               <li>
                 <Link

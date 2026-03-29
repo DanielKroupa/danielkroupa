@@ -48,7 +48,7 @@ export function SeoImprovementsPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-2 text-2xl font-semibold text-foreground">
           Signály, že je čas řešit SEO
         </h2>
@@ -96,7 +96,7 @@ export function SeoImprovementsPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           Proč mi svěřit SEO vašeho webu
         </h2>
@@ -162,7 +162,7 @@ export function SeoImprovementsPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Settings className="h-6 w-6 text-brand-primary" />
           Jak SEO spolupráce probíhá
@@ -250,7 +250,7 @@ export function SeoImprovementsPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Search className="h-6 w-6 text-brand-primary" />
           Co zahrnuje práce na SEO
@@ -304,7 +304,7 @@ export function SeoImprovementsPage() {
         </div>
       </section>
 
-      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <BarChart2 className="h-6 w-6 text-brand-primary" />
           Jaká je cena za SEO
@@ -327,3 +327,4 @@ export function SeoImprovementsPage() {
     </ServiceDetailTemplate>
   );
 }
+

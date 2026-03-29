@@ -51,7 +51,7 @@ export function RedesignPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-2 text-2xl font-semibold text-foreground">
           Kdy víš, že potřebuješ redesign?
         </h2>
@@ -106,7 +106,7 @@ export function RedesignPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           Proč mi svěřit redesign vašeho webu
         </h2>
@@ -174,7 +174,7 @@ export function RedesignPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Settings className="h-6 w-6 text-brand-primary" />
           Jak redesign probíhá – krok za krokem
@@ -185,7 +185,7 @@ export function RedesignPage() {
         </p>
         <ol className="space-y-4 text-brand-text-soft">
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               1
             </div>
             <div>
@@ -201,7 +201,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               2
             </div>
             <div>
@@ -216,7 +216,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               3
             </div>
             <div>
@@ -231,7 +231,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               4
             </div>
             <div>
@@ -245,7 +245,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               5
             </div>
             <div>
@@ -258,7 +258,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               6
             </div>
             <div>
@@ -273,7 +273,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               7
             </div>
             <div>
@@ -288,7 +288,7 @@ export function RedesignPage() {
             </div>
           </li>
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold leading-none text-brand-primary">
               8
             </div>
             <div>
@@ -303,7 +303,7 @@ export function RedesignPage() {
         </ol>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <RefreshCw className="h-6 w-6 text-brand-primary" />
           Co vše redesign zahrnuje
@@ -423,7 +423,7 @@ export function RedesignPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Users className="h-6 w-6 text-brand-primary" />
           Pro koho je redesign webu ideální
@@ -463,7 +463,7 @@ export function RedesignPage() {
         </p>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <AlertTriangle className="h-6 w-6 text-brand-primary" />
           Pro koho redesign vhodný není
@@ -503,7 +503,7 @@ export function RedesignPage() {
         </p>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Zap className="h-6 w-6 text-brand-primary" />
           Jaká je cena za redesign webu
@@ -526,7 +526,7 @@ export function RedesignPage() {
         </p>
       </section>
 
-      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <CheckCircle2 className="h-6 w-6 text-brand-primary" />
           Spuštěním redesignu to nekončí

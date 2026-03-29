@@ -5,6 +5,8 @@ import { CookieConsentLayer } from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { CookieConsentProvider } from "../hooks/useCookieConsent";
+import { PrivacyOverlayLayer } from "../components/PrivacyOverlay";
+import { PrivacyOverlayProvider } from "../hooks/usePrivacyOverlay";
 
 import appCss from "../styles.css?url";
 
@@ -42,23 +44,26 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body className="mx-auto font-sans antialiased wrap-anywhere selection:bg-brand-secondary/30 selection:text-foreground">
-        <CookieConsentProvider>
-          <Header />
-          {children}
-          <Footer />
-          <CookieConsentLayer />
-          <TanStackDevtools
-            config={{
-              position: "bottom-right",
-            }}
-            plugins={[
-              {
-                name: "Tanstack Router",
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-            ]}
-          />
-        </CookieConsentProvider>
+        <PrivacyOverlayProvider>
+          <CookieConsentProvider>
+            <Header />
+            {children}
+            <Footer />
+            <CookieConsentLayer />
+            <PrivacyOverlayLayer />
+            <TanStackDevtools
+              config={{
+                position: "bottom-right",
+              }}
+              plugins={[
+                {
+                  name: "Tanstack Router",
+                  render: <TanStackRouterDevtoolsPanel />,
+                },
+              ]}
+            />
+          </CookieConsentProvider>
+        </PrivacyOverlayProvider>
         <Scripts />
       </body>
     </html>

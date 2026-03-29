@@ -4,10 +4,7 @@ import {
   CheckCircle2,
   Clock,
   Code2,
-  Globe2,
   LayoutTemplate,
-  Settings,
-  Search,
   Users,
 } from "lucide-react";
 import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
@@ -48,7 +45,7 @@ export function WebDevelopmentPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           Proč mi svěřit vývoj vašeho webu
         </h2>
@@ -113,7 +110,7 @@ export function WebDevelopmentPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           Jak spolupráce probíhá – od nápadu po spuštění
         </h2>
@@ -232,7 +229,7 @@ export function WebDevelopmentPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Code2 className="h-6 w-6 text-brand-primary" />
           Co vše je v rámci vývoje webu zahrnuto
@@ -338,7 +335,7 @@ export function WebDevelopmentPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <LayoutTemplate className="h-6 w-6 text-brand-primary" />
           Jaké typy webů pro klienty nejčastěji dělám
@@ -395,7 +392,7 @@ export function WebDevelopmentPage() {
         </div>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Users className="h-6 w-6 text-brand-primary" />
           Pro koho je vývoj webu se mnou ideální
@@ -414,7 +411,7 @@ export function WebDevelopmentPage() {
         </p>
       </section>
 
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Clock className="h-6 w-6 text-brand-primary" />
           Jaká je cena za tvorbu webu
@@ -435,7 +432,7 @@ export function WebDevelopmentPage() {
         </p>
       </section>
 
-      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+      <section className="mb-4 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <CheckCircle2 className="h-6 w-6 text-brand-primary" />
           Spuštěním webu to nekončí

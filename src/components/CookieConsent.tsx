@@ -1,9 +1,9 @@
-import { Link } from "@tanstack/react-router";
 import { ShieldCheck, X, Cookie } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { useCookieConsent } from "#/hooks/useCookieConsent";
 import { useGoogleAnalyticsConsent } from "#/hooks/useGoogleAnalyticsConsent";
+import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
 
 export function CookieConsentLayer() {
   const {
@@ -16,6 +16,7 @@ export function CookieConsentLayer() {
     rejectAll,
     saveSelection,
   } = useCookieConsent();
+  const { openPrivacy } = usePrivacyOverlay();
 
   useGoogleAnalyticsConsent(categories.analytics);
 
@@ -87,12 +88,13 @@ export function CookieConsentLayer() {
                 cookies zapneme až po vašem souhlasu. Volbu můžete kdykoli
                 změnit přes tlačítko „Nastavení cookies“ nebo v patičce webu.
                 Podrobnosti najdete na stránce{" "}
-                <Link
-                  to="/privacy"
+                <button
+                  type="button"
+                  onClick={openPrivacy}
                   className="text-brand-secondary underline transition-colors hover:text-brand-primary"
                 >
                   Ochrana osobních údajů
-                </Link>
+                </button>
                 .
               </p>
             </div>

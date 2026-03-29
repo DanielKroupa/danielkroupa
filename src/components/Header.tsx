@@ -59,6 +59,14 @@ export function Header() {
         />
       </motion.header>
 
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 z-40 md:hidden"
+          aria-hidden="true"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
       <div className="h-18" aria-hidden="true" />
     </>
   );

@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { Image } from "@unpic/react";
 
 type Project = {
   title: string;
@@ -16,7 +17,7 @@ const projects: Project[] = [
     title: "Modernizace webu",
     description:
       "Ze starého webu pro firmu BOMA Úklid s.r.o. jsem vytvořil moderní, rychlý a responzivní web s důrazem na uživatelskou přívětivost, který odpovídá moderním potřebám",
-    image: "/img/boma-uklid-preview.png",
+    image: "/img/boma-uklid-preview.webp",
     tech: ["Redesign", "SEO", "Responzivita", "HTPPS"],
     link: "https://boma.kvalitne.cz",
   },
@@ -24,7 +25,7 @@ const projects: Project[] = [
     title: "Zlepšení SEO pro web",
     description:
       "Firmě POMP STAV s.r.o jsem vylepšil SEO, aby stránky byly vidět v prvních příčkách výsledků vyhledávání (Google, Bing, Seznam, apod.).",
-    image: "/img/pompstav-preview.png",
+    image: "/img/pompstav-preview.webp",
     tech: ["SEO"],
     link: "https://pompstav.cz",
   },
@@ -32,14 +33,14 @@ const projects: Project[] = [
     title: "Prezentační web",
     description:
       "Vytvořil jsem pro živnostníka prezentační web pro zviditelnění jeho služeb v oblasti zednických prací.",
-    image: "/img/zednik-zlin-preview.png",
+    image: "/img/zednik-zlin-preview.webp",
     tech: ["Vývoj webu"],
   },
   {
     title: "Prezentační web",
     description:
       "Díky spolupráci s klientem se přetvořila jeho vize mít online vizitku na funkční a moderní webovou prezentaci. Web nabízí psychologické služby, poradenství a možnost využití služeb formou objednávkového formuláře.",
-    image: "/img/lukas-rihacek-preview.png",
+    image: "/img/lukas-rihacek-preview.webp",
     tech: ["Vývoj webu", "Design", "SEO", "Responzivita"],
   },
 ];
@@ -58,15 +59,20 @@ export function PortfolioSection() {
     >
       {/* Image container */}
       <div className="relative h-64 overflow-hidden">
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover"
+        <motion.div
           animate={{
             scale: hoveredIndex === index ? 1.1 : 1,
           }}
           transition={{ duration: 0.4 }}
-        />
+        >
+          <Image
+            src={project.image}
+            width={250}
+            height={125}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
 
         {/* Overlay on hover */}
         <div className="absolute inset-0 flex items-center justify-center bg-linear-to-t from-background via-background/70 to-transparent">
