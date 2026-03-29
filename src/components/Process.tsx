@@ -70,7 +70,7 @@ export function ProcessSection() {
       {/* Background decoration */}
       <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-brand-glow-primary blur-3xl" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Proces spolupráce

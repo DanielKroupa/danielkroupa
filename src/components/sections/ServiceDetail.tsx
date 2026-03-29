@@ -11,8 +11,8 @@ export function ServiceDetailTemplate({
 }: ServiceDetailTemplateProps) {
   return (
     <main className="min-h-screen bg-background pt-32 pb-24">
-      <div className="container mx-auto px-6">
-        <section className="mx-auto max-w-5xl rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-10">
+      <div className="container mx-auto md:px-6 px-0">
+        <section className="mx-auto max-w-5xl rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 md:p-10">
           <p className="mb-4 text-sm tracking-[0.2em] text-brand-secondary uppercase">
             Služby
           </p>

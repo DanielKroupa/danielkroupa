@@ -54,7 +54,7 @@ export function WebDevelopmentPage() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="flex gap-3 rounded-xl bg-brand-primary/5 p-4">
-            <div className="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15">
               <Code2 className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -69,7 +69,7 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
-            <div className="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-brand-secondary/15">
+            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
               <Users className="text-brand-secondary" size={18} />
             </div>
             <div>
@@ -83,7 +83,7 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-primary/5 p-4">
-            <div className="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15">
               <LayoutTemplate className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -97,7 +97,7 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
-            <div className="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-brand-secondary/15">
+            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
               <CheckCircle2 className="text-brand-secondary" size={18} />
             </div>
             <div>
@@ -115,7 +115,6 @@ export function WebDevelopmentPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-6 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <Settings className="h-6 w-6 text-brand-primary" />
           Jak spolupráce probíhá – od nápadu po spuštění
         </h2>
         <p className="mb-4 text-brand-text-soft">
@@ -125,7 +124,7 @@ export function WebDevelopmentPage() {
         </p>
         <ol className="space-y-4 text-brand-text-soft">
           <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
               1
             </div>
             <div>
@@ -240,9 +239,6 @@ export function WebDevelopmentPage() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <CheckCircle2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Analýza požadavků a vizí
@@ -254,9 +250,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <LayoutTemplate className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Návrh struktury a UX
@@ -268,9 +261,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <Globe2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Vizuální návrh (UI)
@@ -282,9 +272,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <CheckCircle2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Copywriting a konzultace textů
@@ -296,9 +283,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <Search className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">Základy SEO</p>
               <p className="text-sm text-brand-text-soft">
@@ -308,9 +292,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <Code2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Technická realizace
@@ -322,9 +303,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <Settings className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Měření návštěvnosti
@@ -336,9 +314,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <CheckCircle2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Nasazení do ostrého provozu
@@ -350,9 +325,6 @@ export function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
-              <CheckCircle2 className="text-brand-primary" size={18} />
-            </div>
             <div>
               <p className="font-semibold text-foreground">
                 Následná správa a rozvoj
