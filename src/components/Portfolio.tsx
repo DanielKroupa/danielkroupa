@@ -58,26 +58,28 @@ export function PortfolioSection() {
       className="group relative cursor-pointer overflow-hidden rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 transition-all hover:border-brand-secondary/45"
     >
       {/* Image container */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="group/image relative h-64 overflow-hidden">
         <motion.div
+          className="h-full w-full"
           animate={{
             scale: hoveredIndex === index ? 1.1 : 1,
           }}
           transition={{ duration: 0.4 }}
         >
           <Image
+            width={480}
+            height={320}
             src={project.image}
-            width={250}
-            height={125}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="h-full w-full object-cover"
+            loading="lazy"
           />
         </motion.div>
 
-        {/* Overlay on hover */}
-        <div className="absolute inset-0 flex items-center justify-center bg-linear-to-t from-background via-background/70 to-transparent">
-          <div className="rounded-full bg-brand-primary p-4 text-primary-foreground">
-            <ExternalLink size={24} />
+        {/* Mobile: always visible, icon in top-right. Desktop: visible only on image hover. */}
+        <div className="absolute inset-0 flex items-start justify-end bg-linear-to-t from-background via-background/70 to-transparent p-3 opacity-100 transition-opacity duration-300 md:items-center md:justify-center md:p-0 md:opacity-0 md:group-hover/image:opacity-100">
+          <div className="rounded-full bg-brand-primary p-3 text-primary-foreground opacity-100 transition-all duration-300 md:translate-y-3 md:opacity-0 md:group-hover/image:translate-y-0 md:group-hover/image:opacity-100">
+            <ExternalLink size={20} />
           </div>
         </div>
       </div>

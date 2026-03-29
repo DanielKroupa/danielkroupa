@@ -154,6 +154,7 @@ export function HeroSection() {
                     src="/img/20260315_2039_Modern Web Developer_remix_01kksg394nep0btjsyq7gvsnse.webp"
                     alt="Modern Web Dashboard"
                     className="block w-full"
+                    layout="constrained"
                   />
                   <div className="pointer-events-none absolute inset-0 bg-brand-secondary/15 mix-blend-screen" />
                 </div>
