@@ -95,10 +95,12 @@ export function ContactSection() {
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Začněme spolupracovat
           </h2>
+          <p className="mx-auto max-w-2xl text-xl text-brand-text-soft mb-2">
+            Máte představu o projektu, nápad nebo jen otázku?
+          </p>
           <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
-            Máte představu o projektu, nápad nebo jen otázku? Nemusíte mít vše
-            vymyšlené. Kontaktujte mne a společně probereme, jak pomůžu se
-            zrealizováním vašeho nápadu.
+            Nemusíte mít vše vymyšlené. Kontaktujte mne a společně probereme,
+            jak pomůžu zrealizovat váš nápad v realitu.
           </p>
         </motion.div>
 

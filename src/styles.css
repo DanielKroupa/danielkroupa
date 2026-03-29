@@ -213,3 +213,56 @@
     line-height: 1.5;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body,
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--brand-primary) var(--background);
+  }
+
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: 9999px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      var(--brand-primary) 0%,
+      var(--brand-secondary) 100%
+    );
+    border: 2px solid var(--background);
+    border-radius: 9999px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+    transition:
+      background 180ms ease,
+      box-shadow 180ms ease,
+      border-color 180ms ease;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      var(--brand-primary-strong) 0%,
+      var(--brand-secondary) 100%
+    );
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.06),
+      0 0 12px var(--brand-glow-primary);
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
+}
