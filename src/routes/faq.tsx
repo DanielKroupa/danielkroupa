@@ -10,17 +10,12 @@ const faqs = [
   {
     question: "Jak dlouho trvá vývoj webu?",
     answer:
-      "Záleží na rozsahu projektu. Jednoduchý landing page je hotový za 1-2 týdny, komplexní firemní web za 3-4 týdny a webová aplikace může trvat 6-12 týdnů. Po analýze vašich požadavků vám poskytnu přesný časový odhad.",
-  },
-  {
-    question: "Kolik stojí vytvoření webu?",
-    answer:
-      "Cena závisí na rozsahu a složitosti projektu. Jednoduchá landing page od 15 000 Kč, firemní web od 35 000 Kč, komplexní webové aplikace individuálně. Po konzultaci vám připravím cenovou nabídku přesně na míru vašim potřebám.",
+      "Záleží na rozsahu projektu. Jednoduchý landing page je hotový za 3-6 týdnů, komplexní firemní web za 1-3 měsíců a webová aplikace může trvat několik měsíců dle složitosti. Po analýze vašich požadavků vám poskytnu časový odhad a přibližnou cenu.",
   },
   {
     question: "Budou webové stránky responzivní?",
     answer:
-      "Ano, všechny weby vytvářím jako plně responzivní, což znamená, že perfektně fungují na všech zařízeních - počítače, tablety i mobilní telefony. To je dnes naprosto nezbytné pro dobrou uživatelskou zkušenost i SEO.",
+      "Ano, všechny weby vytvářím jako plně responzivní, což znamená, že perfektně fungují na všech zařízeních - počítače, tablety i mobilní telefony. To je dnes naprosto nezbytné pro dobrou uživatelskou zkušenost i zobrazení ve vyhledávačích.",
   },
   {
     question: "Potřebuji připravit nějaké podklady?",
@@ -30,28 +25,28 @@ const faqs = [
   {
     question: "Jak probíhá spolupráce?",
     answer:
-      "1) Konzultace a analýza potřeb, 2) Vytvoření návrhu struktury a designu ke schválení, 3) Vývoj webu s průběžnými aktualizacemi, 4) Testování a úpravy podle feedbacku, 5) Spuštění a předání webu. Po celou dobu máte přehled o postupu.",
+      "Nejdříve si spolu dáme krátký online hovor. Pokud si sedneme, probereme a zanalyzuji vaše potřeby. Vytvoří se prvotní struktura, design, texty a celý web vytvořím dle zadání. Poté web otestuji a spustím do ostrého provozu. Tím spolupráce nekončí - poskytuji podporu a údržbu i po spuštění abyste vy mohli s webem růst.",
   },
   {
     question: "Můžu web později sám upravovat?",
     answer:
-      "Ano! Pro většinu projektů nastavuji jednoduché administrační rozhraní (CMS), kde můžete snadno upravovat texty, přidávat články nebo měnit fotografie. Vše vás naučím a poskytuji dokumentaci.",
+      "Pokud si zvolíte projekt s administračním rozhraním (CMS), můžete snadno upravovat texty, přidávat články nebo měnit fotografie, kde vás vše naučím pomocí vzdálené obrazovky. V opačném případě je potřeba veškeré úpravy řešit přes mě.",
   },
   {
-    question: "Zahrnuje cena i hosting a doménu?",
+    question: "Zahrnujete do vývoje cenu za hosting a doménu?",
     answer:
-      "První rok hostingu a domény je většinou zahrnutý v ceně. Následně záleží na typu serveru a vašich potřebách - obvykle 2000-5000 Kč ročně. Mohu vše zařídit nebo vám poradit s výběrem poskytovatele.",
+      "Hosting a doména nejsou v ceně jako součást služby. Pomohu vám vybrat vhodného poskytovatele a nastavit vše potřebné, ale náklady na hosting a doménu jsou hrazeny poskytovateli. Rád vám doporučím spolehlivé a cenově dostupné možnosti.",
   },
   {
     question: "Poskytujete technickou podporu?",
     answer:
-      "Ano, po spuštění poskytuji technickou podporu a údržbu. Můžeme se dohodnout na jednorázových úpravách nebo pravidelné měsíční údržbě, která zahrnuje aktualizace, zálohy a průběžné vylepšování.",
+      "Ano, poskytuji v rámci záruky technickou podporu a údržbu do 30 dnů od předání projektu (u složitých projektů může být doba delší). Poté se můžeme dohodnout na jednorázových úpravách nebo pravidelné měsíční údržbě, která zahrnuje například aktualizace, zálohy či průběžné vylepšování.",
   },
   {
     question:
       "Jak zajistíte, že web bude optimalizovaný pro vyhledávače (SEO)?",
     answer:
-      "SEO optimalizace je standardní součástí každého projektu. Zahrnuje technické SEO (rychlost, struktura, meta tagy), responzivitu, optimalizaci obrázků a další best practices. Pro pokročilé SEO mohu doporučit specialisty.",
+      "SEO je standardní součástí každého projektu. Zahrnuje nezbytné SEO (rychlost, struktura, meta tagy), responzivitu, optimalizaci obrázků a další best practices. SEO u pokročilých projektů již obvykle konzultuji se specialisty.",
   },
   {
     question: "Mohu vidět ukázky vašich prací?",
