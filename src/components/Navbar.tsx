@@ -3,6 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { SERVICE_DEFINITIONS } from "#/utils/services";
+import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
 
 type NavbarProps = {
   isMobileMenuOpen: boolean;
@@ -39,6 +40,7 @@ export function Navbar({
 }: NavbarProps) {
   const [isServicesDesktopOpen, setIsServicesDesktopOpen] = useState(false);
   const [isServicesMobileOpen, setIsServicesMobileOpen] = useState(false);
+  const { trackSelectContent } = useAnalyticsTracking();
   const location = useLocation();
   const servicesMenuRef = useRef<HTMLDivElement | null>(null);
   const servicesButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -209,7 +211,13 @@ export function Navbar({
           {NAV_ITEMS.map((item) => renderNavItem(item, false))}
           <button
             type="button"
-            onClick={() => handleSectionClick("kontakt", false)}
+            onClick={() => {
+              trackSelectContent(
+                "navbar_desktop_nezavazna_poptavka",
+                "cta_button",
+              );
+              handleSectionClick("kontakt", false);
+            }}
             className={`${ctaClass} hover:scale-105`}
           >
             Nezávazná poptávka
@@ -283,7 +291,13 @@ export function Navbar({
               {NAV_ITEMS.map((item) => renderNavItem(item, true))}
               <button
                 type="button"
-                onClick={() => handleSectionClick("kontakt", true)}
+                onClick={() => {
+                  trackSelectContent(
+                    "navbar_mobile_nezavazna_poptavka",
+                    "cta_button",
+                  );
+                  handleSectionClick("kontakt", true);
+                }}
                 className={`${ctaClass} text-left`}
               >
                 Nezávazná poptávka

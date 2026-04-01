@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Check } from "lucide-react";
+import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
 
 const pricingOptions = [
   {
@@ -49,7 +50,11 @@ const pricingOptions = [
 ];
 
 export function PricingSection() {
-  const scrollToContact = () => {
+  const { trackSelectContent } = useAnalyticsTracking();
+
+  const scrollToContact = (itemId: string) => {
+    trackSelectContent(itemId, "cta_button");
+
     const element = document.getElementById("kontakt");
     if (element) {
       const offset = 80;
@@ -118,7 +123,9 @@ export function PricingSection() {
               </ul>
 
               <button
-                onClick={scrollToContact}
+                onClick={() => {
+                  scrollToContact(`pricing_card_${index + 1}_poptat_projekt`);
+                }}
                 className={`mt-auto w-full rounded-lg py-3 font-semibold transition-all ${
                   option.popular
                     ? "bg-brand-primary text-primary-foreground cursor-pointer shadow-lg shadow-brand-primary/30 hover:bg-brand-primary-strong"
@@ -148,7 +155,9 @@ export function PricingSection() {
               nabídku přesně na míru vašim potřebám.
             </p>
             <button
-              onClick={scrollToContact}
+              onClick={() => {
+                scrollToContact("pricing_customni_nabidka");
+              }}
               className="group inline-flex items-center gap-2 cursor-pointer rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
             >
               Získat cenovou nabídku

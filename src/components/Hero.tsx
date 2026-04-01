@@ -1,10 +1,15 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
 
 import { Image } from "@unpic/react";
 
 export function HeroSection() {
+  const { trackSelectContent } = useAnalyticsTracking();
+
   const scrollToContact = () => {
+    trackSelectContent("hero_nezavazna_poptavka", "cta_button");
+
     const element = document.getElementById("kontakt");
     if (element) {
       const offset = 80;
@@ -19,6 +24,8 @@ export function HeroSection() {
   };
 
   const scrollToProjects = () => {
+    trackSelectContent("hero_ukazat_projekty", "cta_button");
+
     const element = document.getElementById("portfolio");
     if (element) {
       const offset = 80;

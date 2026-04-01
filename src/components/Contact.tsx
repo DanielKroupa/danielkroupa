@@ -3,6 +3,7 @@ import { Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { SERVICE_DEFINITIONS } from "#/utils/services";
 import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
+import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,6 +26,7 @@ export function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const { openPrivacy } = usePrivacyOverlay();
+  const { trackGenerateLead } = useAnalyticsTracking();
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -58,6 +60,7 @@ export function ContactSection() {
         return;
       }
 
+      trackGenerateLead("contact_form", values.preferredService);
       setSubmitted(true);
       reset({
         firstname: "",

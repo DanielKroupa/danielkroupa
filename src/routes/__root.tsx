@@ -2,6 +2,7 @@ import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { CookieConsentLayer } from "../components/CookieConsent";
+import { AnalyticsGate } from "../components/AnalyticsGate";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { RootNotFound } from "../components/RootNotFound";
@@ -45,6 +46,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body className="mx-auto font-sans antialiased wrap-anywhere selection:bg-brand-secondary/30 selection:text-foreground">
         <PrivacyOverlayProvider>
           <CookieConsentProvider>
+            <AnalyticsGate />
             <Header />
             {children}
             <Footer />

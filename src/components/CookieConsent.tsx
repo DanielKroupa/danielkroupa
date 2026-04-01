@@ -2,8 +2,6 @@ import { ShieldCheck, X, Cookie } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { useCookieConsent } from "#/hooks/useCookieConsent";
-import { useGoogleAnalyticsConsent } from "#/hooks/useGoogleAnalyticsConsent";
-import { useGoogleAnalyticsPageViews } from "#/hooks/useGoogleAnalyticsPageViews";
 import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
 
 export function CookieConsentLayer() {
@@ -18,9 +16,6 @@ export function CookieConsentLayer() {
     saveSelection,
   } = useCookieConsent();
   const { openPrivacy } = usePrivacyOverlay();
-
-  useGoogleAnalyticsConsent(categories.analytics);
-  useGoogleAnalyticsPageViews(categories.analytics);
 
   const [draft, setDraft] = useState({
     analytics: categories.analytics,
