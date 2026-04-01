@@ -37,23 +37,14 @@ export function useGoogleAnalyticsConsent(analyticsEnabled: boolean) {
     }
 
     window[disableKey] = false;
+    // Initialize queue/config before loading gtag.js so hits are processed reliably.
+    initializeGoogleAnalytics(measurementId);
 
     const existingScript = document.querySelector<HTMLScriptElement>(
       `script[${MANAGED_GA_SCRIPT_ATTRIBUTE}="true"]`,
     );
 
     if (existingScript) {
-      if (existingScript.dataset.loaded === "true") {
-        initializeGoogleAnalytics(measurementId);
-      } else {
-        existingScript.addEventListener(
-          "load",
-          () => {
-            initializeGoogleAnalytics(measurementId);
-          },
-          { once: true },
-        );
-      }
       return;
     }
 
@@ -67,7 +58,6 @@ export function useGoogleAnalyticsConsent(analyticsEnabled: boolean) {
       "load",
       () => {
         script.dataset.loaded = "true";
-        initializeGoogleAnalytics(measurementId);
       },
       { once: true },
     );
