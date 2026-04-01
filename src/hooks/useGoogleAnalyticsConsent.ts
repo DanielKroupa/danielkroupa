@@ -1,11 +1,17 @@
 import { useEffect } from "react";
 
 const MANAGED_GA_SCRIPT_ATTRIBUTE = "data-dk-ga-script";
+export const GA_READY_EVENT = "dk:ga-ready";
+
+interface GoogleAnalyticsReadyEventDetail {
+  measurementId: string;
+}
 
 declare global {
   interface Window {
     dataLayer: unknown[];
     gtag?: (...args: unknown[]) => void;
+    __dkGaReadyMeasurementId?: string;
     [key: string]: unknown;
   }
 }
@@ -15,6 +21,9 @@ export function useGoogleAnalyticsConsent(analyticsEnabled: boolean) {
     const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID?.trim() ?? "";
 
     if (!measurementId) {
+      if (import.meta.env.DEV) {
+        console.warn("[analytics] Missing VITE_GA_MEASUREMENT_ID.");
+      }
       return;
     }
 
@@ -22,6 +31,7 @@ export function useGoogleAnalyticsConsent(analyticsEnabled: boolean) {
 
     if (!analyticsEnabled) {
       window[disableKey] = true;
+      window.__dkGaReadyMeasurementId = undefined;
       clearGoogleAnalyticsCookies();
       return;
     }
@@ -62,6 +72,16 @@ export function useGoogleAnalyticsConsent(analyticsEnabled: boolean) {
       { once: true },
     );
 
+    script.addEventListener(
+      "error",
+      () => {
+        if (import.meta.env.DEV) {
+          console.warn("[analytics] Failed to load Google Analytics script.");
+        }
+      },
+      { once: true },
+    );
+
     document.head.appendChild(script);
   }, [analyticsEnabled]);
 }
@@ -80,7 +100,16 @@ function initializeGoogleAnalytics(measurementId: string) {
   window.gtag("js", new Date());
   window.gtag("config", measurementId, {
     anonymize_ip: true,
+    // Page views are sent manually on route changes to support SPA navigation.
+    send_page_view: false,
   });
+
+  window.__dkGaReadyMeasurementId = measurementId;
+  window.dispatchEvent(
+    new CustomEvent<GoogleAnalyticsReadyEventDetail>(GA_READY_EVENT, {
+      detail: { measurementId },
+    }),
+  );
 }
 
 function clearGoogleAnalyticsCookies() {
