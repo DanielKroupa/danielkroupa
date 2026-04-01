@@ -116,8 +116,9 @@ export function ProjectsSection() {
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Projekty
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
-            Ukázka realizovaných projektů a prací, které pomohly klientům růst
+          <p className="mx-auto max-w-6xl text-xl text-brand-text-soft">
+            Ukázka realizovaných projektů a prací, které pomohly klientům růst.
+            Zde může být i váš projekt, který přinesl výsledky.
           </p>
         </div>
 
@@ -156,8 +157,13 @@ export function ProjectsSection() {
             );
           })}
         </div>
-
-        <div className="text-center mt-12"></div>
+        <div className="mx-auto max-w-3xl mt-8 rounded-2xl border border-brand-secondary/30 bg-linear-to-br from-brand-primary/12 to-brand-secondary/12 p-8">
+          <p className="mx-auto max-w-6xl text-xl text-brand-text-soft">
+            Ukázky, které vidíte, jsou malá část všech mých realizací. Další
+            projekty či navržené designy vám rád poskytnu jako inspiraci po
+            domluvě.
+          </p>
+        </div>
       </div>
     </section>
   );

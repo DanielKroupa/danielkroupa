@@ -21,14 +21,14 @@ const steps = [
     number: "2",
     title: "Návrh struktury a designu",
     description:
-      "Navrhnu strukturu a vizuální směr, který sedí vaší značce. Odsouhlasíme to spolu, než se pustíme dál.",
+      "Z dodaných podkladů navrhnu strukturu a vizuální směr, který sedí vaší značce. Odsouhlasíme to spolu, než se pustíme dál.",
   },
   {
     icon: ChartLine,
     number: "3",
     title: "Analýza klíčových slov",
     description:
-      "Zjistím, co vaši zákazníci skutečně hledají, a postavím web tak, aby je vyhledavače přivedly k vám. ",
+      "Zjistím, co vaši zákazníci skutečně hledají, a postavím web tak, aby je vyhledavače přivedly k vám.",
   },
   {
     icon: Code2,
@@ -75,9 +75,9 @@ export function ProcessSection() {
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Jak probíhá spolupráce
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
-            Od první zprávy až po spuštění — víte přesně, co se děje a co přijde
-            dál
+          <p className="mx-auto max-w-3xl text-xl text-brand-text-soft">
+            Od první zprávy až po spuštění webu — víte přesně, co se děje a co
+            přijde dál.
           </p>
         </div>
 

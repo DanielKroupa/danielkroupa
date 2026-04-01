@@ -3,6 +3,8 @@ import { Mail, Phone } from "lucide-react";
 import { useCookieConsent } from "#/hooks/useCookieConsent";
 import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
 
+import { Image } from "@unpic/react";
+
 export function Footer() {
   const location = useLocation();
   const { openSettings } = useCookieConsent();
@@ -32,9 +34,12 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="mb-4 text-xl font-bold text-foreground">
-              Daniel<span className="text-brand-primary">Kroupa</span>
-            </h3>
+            <Image
+              src="/logo192.png"
+              width={50}
+              height={50}
+              alt="Daniel Kroupa Logo"
+            />
             <p className="text-muted-foreground">
               Moderní webové řešení pro vaše podnikání.
             </p>

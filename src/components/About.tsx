@@ -63,9 +63,9 @@ export function AboutSection() {
             </h2>
 
             <p className="mb-8 text-xl leading-relaxed text-brand-text-soft">
-              Jmenuji se Daniel. Ve volném čase rád chodím na procházky, věnuji
-              se čtení a fitness, které mě udržuje v kondici. Věřím, že když je
-              lidská stránka v rovnováze, jde všechno ostatní mnohem snáz.
+              Jmenuji se Daniel. Ve volném čase se věnuji čtení a fitness, které
+              mě udržuje v kondici. Věřím, že když si lidé sednou po lidské
+              stránce, jde všechno ostatní mnohem snáz.
             </p>
 
             <div className="space-y-4 mb-8">

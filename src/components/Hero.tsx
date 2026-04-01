@@ -134,7 +134,7 @@ export function HeroSection() {
                 <div className="mb-1 text-3xl font-bold text-brand-primary">
                   10+
                 </div>
-                <div>Dokončených plánů</div>
+                <div>Dokončených zakázek</div>
               </div>
               <div>
                 <div className="mb-1 text-3xl font-bold text-brand-secondary">

@@ -99,7 +99,7 @@ export function PricingSection() {
               )}
 
               <div className="mb-6">
-                <h3 className="mb-2 text-2xl font-bold text-foreground">
+                <h3 className="mb-2 text-2xl text-center font-bold text-foreground">
                   {option.title}
                 </h3>
                 <p className="mb-4 text-brand-text-soft">
