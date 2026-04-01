@@ -119,10 +119,10 @@ export function Footer() {
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={16} />
                 <a
-                  href="mailto:kroupa.daniel98@seznam.cz"
+                  href="mailto:info@danielkroupa.cz"
                   className="transition-colors hover:text-brand-secondary"
                 >
-                  kroupa.daniel98@seznam.cz
+                  info@danielkroupa.cz
                 </a>
               </li>
             </ul>

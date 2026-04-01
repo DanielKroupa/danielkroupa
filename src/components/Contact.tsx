@@ -144,10 +144,10 @@ export function ContactSection() {
                 <div>
                   <div className="mb-1 text-sm text-brand-text-soft">Email</div>
                   <a
-                    href="mailto:kroupa.daniel98@seznam.cz"
+                    href="mailto:info@danielkroupa.cz"
                     className="text-lg text-foreground transition-colors hover:text-brand-secondary"
                   >
-                    kroupa.daniel98@seznam.cz
+                    info@danielkroupa.cz
                   </a>
                 </div>
               </div>
