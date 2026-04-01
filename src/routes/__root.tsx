@@ -9,8 +9,6 @@ import { CookieConsentProvider } from "../hooks/useCookieConsent";
 import { PrivacyOverlayLayer } from "../components/PrivacyOverlay";
 import { PrivacyOverlayProvider } from "../hooks/usePrivacyOverlay";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
 import appCss from "../styles.css?url";
 
 const THEME_INIT_SCRIPT = `(function(){try{var root=document.documentElement;var media=window.matchMedia('(prefers-color-scheme: dark)');var apply=function(isDark){var resolved=isDark?'dark':'light';root.classList.remove('light','dark');root.classList.add(resolved);root.style.colorScheme=resolved;root.removeAttribute('data-theme');};apply(media.matches);if(typeof media.addEventListener==='function'){media.addEventListener('change',function(event){apply(event.matches);});}else if(typeof media.addListener==='function'){media.addListener(function(event){apply(event.matches);});}}catch(e){}})();`;
@@ -65,7 +63,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             />
           </CookieConsentProvider>
         </PrivacyOverlayProvider>
-        <SpeedInsights />
         <Scripts />
       </body>
     </html>
