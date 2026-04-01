@@ -1,6 +1,7 @@
 {
-  "short_name": "TanStack App",
-  "name": "Create TanStack App Sample",
+  "short_name": "Daniel Kroupa",
+  "name": "Daniel Kroupa - Vývoj webů na míru",
+  "description": "Tvorba moderních webových stránek na míru se zaměřením na rychlost, SEO a konverze.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#10b981",
   "background_color": "#ffffff"
 }

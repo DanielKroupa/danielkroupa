@@ -8,16 +8,17 @@ import {
   Users,
 } from "lucide-react";
 import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
+import { createSeoHead } from "#/lib/seo/meta";
 import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/vyvoj-webu")({
-  head: () => ({
-    meta: [
-      {
-        title: "Vývoj webů na míru | Daniel Kroupa",
-      },
-    ],
-  }),
+  head: () =>
+    createSeoHead({
+      title: "Vývoj webů na míru | Daniel Kroupa",
+      description:
+        "Tvorba moderních webových stránek na míru se zaměřením na výkon, SEO a konverze.",
+      path: "/sluzby/vyvoj-webu",
+    }),
   component: WebDevelopmentPage,
 });
 

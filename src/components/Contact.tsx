@@ -100,7 +100,7 @@ export function ContactSection() {
           </p>
           <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
             Nemusíte mít vše vymyšlené. Kontaktujte mne a společně probereme,
-            jak pomůžu zrealizovat váš nápad v realitu.
+            jak pomůžu zrealizovat váš nápad ve skutečnost.
           </p>
         </motion.div>
 

@@ -22,9 +22,6 @@ export const Route = createRootRoute({
         name: "viewport",
         content: "width=device-width, initial-scale=1",
       },
-      {
-        title: "Daniel Kroupa | Vývoj webů na míru",
-      },
     ],
     links: [
       {
@@ -53,7 +50,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             <PrivacyOverlayLayer />
             <TanStackDevtools
               config={{
-                position: "bottom-right",
+                position: "bottom-left",
               }}
               plugins={[
                 {

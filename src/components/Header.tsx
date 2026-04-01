@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "@tanstack/react-router";
-import { motion } from "motion/react";
 import { Navbar } from "./Navbar";
 
 export function Header() {
@@ -44,9 +43,7 @@ export function Header() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
+      <header
         className={`fixed top-0 right-0 left-0 z-50 border-b border-border bg-background/90 backdrop-blur-md transition-all duration-300 ${
           isScrolled ? "shadow-xl shadow-black/10" : "shadow-none"
         }`}
@@ -57,7 +54,7 @@ export function Header() {
           onCloseMobileMenu={() => setIsMobileMenuOpen(false)}
           onScrollToSection={scrollToSection}
         />
-      </motion.header>
+      </header>
 
       {isMobileMenuOpen && (
         <div

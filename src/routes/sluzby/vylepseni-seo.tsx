@@ -13,17 +13,18 @@ import {
   Users,
 } from "lucide-react";
 import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
+import { createSeoHead } from "#/lib/seo/meta";
 import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/vylepseni-seo")({
   component: SeoImprovementsPage,
-  head: () => ({
-    meta: [
-      {
-        title: "Vylepšení SEO | Daniel Kroupa",
-      },
-    ],
-  }),
+  head: () =>
+    createSeoHead({
+      title: "Vylepšení SEO | Daniel Kroupa",
+      description:
+        "Technická i obsahová SEO optimalizace pro lepší pozice ve vyhledávání.",
+      path: "/sluzby/vylepseni-seo",
+    }),
 });
 
 export function SeoImprovementsPage() {
@@ -327,4 +328,3 @@ export function SeoImprovementsPage() {
     </ServiceDetailTemplate>
   );
 }
-

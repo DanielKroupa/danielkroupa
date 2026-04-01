@@ -3,8 +3,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { createSeoHead } from "#/lib/seo/meta";
 
-export const Route = createFileRoute("/faq")({ component: FAQPage });
+export const Route = createFileRoute("/faq")({
+  head: () =>
+    createSeoHead({
+      title: "FAQ | Daniel Kroupa",
+      description:
+        "Často kladené otázky o tvorbě webových stránek, spolupráci, ceně, termínech i SEO. ",
+      path: "/faq",
+    }),
+  component: FAQPage,
+});
 
 const faqs = [
   {

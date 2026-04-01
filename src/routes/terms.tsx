@@ -1,7 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
+import { createSeoHead } from "#/lib/seo/meta";
 
-export const Route = createFileRoute("/terms")({ component: TermsPage });
+export const Route = createFileRoute("/terms")({
+  head: () =>
+    createSeoHead({
+      title: "Obchodní podmínky | Daniel Kroupa",
+      description:
+        "Obchodní podmínky pro vývoj webů na míru, redesign, SEO optimalizaci a související služby.",
+      path: "/terms",
+    }),
+  component: TermsPage,
+});
 
 export function TermsPage() {
   return (

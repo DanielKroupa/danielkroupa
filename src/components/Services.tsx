@@ -54,20 +54,14 @@ export function ServicesSection() {
       <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-brand-glow-primary blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Služby
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
             Jak vám mohu pomoct s růstem vašeho podnikání
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {

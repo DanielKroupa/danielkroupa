@@ -14,17 +14,18 @@ import {
   Zap,
 } from "lucide-react";
 import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
+import { createSeoHead } from "#/lib/seo/meta";
 import { SERVICE_BY_ROUTE } from "#/utils/services";
 
 export const Route = createFileRoute("/sluzby/redesign")({
   component: RedesignPage,
-  head: () => ({
-    meta: [
-      {
-        title: "Redesign webu | Daniel Kroupa",
-      },
-    ],
-  }),
+  head: () =>
+    createSeoHead({
+      title: "Redesign webu | Daniel Kroupa",
+      description:
+        "Kompletní redesign webu se zaměřením na moderní vzhled, lepší uživatelskou zkušenost, rychlost načítání a výkon ve vyhledávačích.",
+      path: "/sluzby/redesign",
+    }),
 });
 
 export function RedesignPage() {

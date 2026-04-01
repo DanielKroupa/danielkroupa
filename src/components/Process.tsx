@@ -73,7 +73,7 @@ export function ProcessSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
-            Proces spolupráce
+            Jak probíhá spolupráce
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
             Od první zprávy až po spuštění — víte přesně, co se děje a co přijde

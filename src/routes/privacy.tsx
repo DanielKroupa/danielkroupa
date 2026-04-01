@@ -2,8 +2,18 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback } from "react";
 
 import { PrivacyDialog } from "#/components/PrivacyDialog";
+import { createSeoHead } from "#/lib/seo/meta";
 
-export const Route = createFileRoute("/privacy")({ component: PrivacyPage });
+export const Route = createFileRoute("/privacy")({
+  head: () =>
+    createSeoHead({
+      title: "Ochrana osobních údajů | Daniel Kroupa",
+      description:
+        "Informace o zpracování osobních údajů, používání cookies a ochraně soukromí.",
+      path: "/privacy",
+    }),
+  component: PrivacyPage,
+});
 
 export function PrivacyPage() {
   const navigate = useNavigate();

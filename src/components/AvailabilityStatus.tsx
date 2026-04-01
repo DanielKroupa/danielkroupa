@@ -49,10 +49,7 @@ export function AvailabilityStatus({ status }: AvailabilityStatusProps) {
       aria-label="Dostupnost pro nové projekty"
     >
       <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
+        <div
           role="status"
           aria-live="polite"
           className="rounded-2xl border border-border p-4 shadow-lg shadow-brand-glow-primary/30"
@@ -72,7 +69,7 @@ export function AvailabilityStatus({ status }: AvailabilityStatusProps) {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
