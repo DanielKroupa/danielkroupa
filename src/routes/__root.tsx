@@ -4,6 +4,7 @@ import { TanStackDevtools } from "@tanstack/react-devtools";
 import { CookieConsentLayer } from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { RootNotFound } from "../components/RootNotFound";
 import { CookieConsentProvider } from "../hooks/useCookieConsent";
 import { PrivacyOverlayLayer } from "../components/PrivacyOverlay";
 import { PrivacyOverlayProvider } from "../hooks/usePrivacyOverlay";
@@ -30,6 +31,7 @@ export const Route = createRootRoute({
       },
     ],
   }),
+  notFoundComponent: RootNotFound,
   shellComponent: RootDocument,
 });
 
