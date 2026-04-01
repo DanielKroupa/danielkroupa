@@ -65,7 +65,7 @@ export function CookieConsentLayer() {
         <button
           type="button"
           onClick={openSettings}
-          className="fixed right-4 bottom-6 z-40 inline-flex items-center gap-2 rounded-full border border-border bg-card p-3 text-sm font-semibold text-foreground shadow-lg shadow-brand-primary/15 transition-all hover:-translate-y-0.5 hover:border-brand-secondary/60 hover:text-brand-secondary md:right-6"
+          className="fixed cursor-pointer right-4 bottom-6 z-40 inline-flex items-center gap-2 rounded-full border border-border bg-card p-3 text-sm font-semibold text-foreground shadow-lg shadow-brand-primary/15 transition-all hover:-translate-y-0.5 hover:border-brand-secondary/60 hover:text-brand-secondary md:right-6"
           aria-label="Otevřít nastavení cookies"
         >
           <Cookie size={20} />
@@ -157,7 +157,7 @@ export function CookieConsentLayer() {
                 type="button"
                 onClick={closeSettings}
                 title="Zavřít nastavení cookies"
-                className="rounded-full border border-border p-2 text-sm font-semibold text-foreground transition-colors hover:border-brand-secondary/60 hover:text-brand-secondary"
+                className="rounded-full cursor-pointer border border-border p-2 text-sm font-semibold text-foreground transition-colors hover:border-brand-secondary/60 hover:text-brand-secondary"
               >
                 <X />
               </button>
@@ -195,7 +195,7 @@ export function CookieConsentLayer() {
               <button
                 type="button"
                 onClick={rejectAll}
-                className="rounded-lg border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-brand-secondary/60 hover:text-brand-secondary"
+                className="rounded-lg cursor-pointer border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-brand-secondary/60 hover:text-brand-secondary"
               >
                 Odmítnout vše
               </button>
@@ -204,7 +204,7 @@ export function CookieConsentLayer() {
                 onClick={() => {
                   saveSelection(draft);
                 }}
-                className="rounded-lg bg-brand-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-primary-strong"
+                className="rounded-lg cursor-pointer bg-brand-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-brand-primary-strong"
               >
                 Uložit výběr
               </button>

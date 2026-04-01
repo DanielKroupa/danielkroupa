@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
 import { Code, Palette, Zap, Search, Settings, ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 const services = [
   {
     icon: Code,
+    link: "/sluzby/vyvoj-webu",
     title: "Vývoj webových stránek na míru",
     description:
       "Dostanete web, který pracuje pro vás — přivádí zákazníky, budí důvěru a drží se konkurence. Postavený na moderních technologiích, rychlý a připravený na růst.",
@@ -12,6 +14,7 @@ const services = [
   },
   {
     icon: Palette,
+    link: "/sluzby/redesign",
     title: "Redesign webových stránek",
     description:
       "Zastaralý web zákazníky odradí dřív, než si vás vůbec přečtou. Redesign mu dá novou strukturu, svěží vizuál i technický základ — a vy znovu začnete konvertovat.",
@@ -20,6 +23,7 @@ const services = [
   },
   {
     icon: Zap,
+    link: "/sluzby/optimalizace-webu",
     title: "Optimalizace výkonu",
     description:
       "Pomalý web ztrácí zákazníky — každá sekunda prodlevy znamená odchody. Zanalyzuji váš web a nastavím ho tak, aby byl rychlý, stabilní a Google ho rád zobrazoval.",
@@ -28,6 +32,7 @@ const services = [
   },
   {
     icon: Search,
+    link: "/sluzby/vylepseni-seo",
     title: "Zviditelnění ve vyhledávačích díky SEO",
     description:
       "Zákazníci vás nejdřív musí najít. Nastavím SEO tak, aby vás vyhledávače začaly doporučovat přirozeně — bez placené reklamy, s dlouhodobým efektem.",
@@ -36,6 +41,7 @@ const services = [
   },
   {
     icon: Settings,
+    link: "/sluzby/webova-analytika",
     title: "Webové aplikace pro podnikání",
     description:
       "Opakující se ruční procesy vás brzdí a stojí peníze. Navrhnu vám webovou aplikaci, která je automatizuje — přehledně, spolehlivě a přesně na míru vašemu provozu.",
@@ -64,40 +70,42 @@ export function ServicesSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
-                className="group cursor-pointer rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-8 transition-all hover:border-brand-secondary/45"
+              <Link
+                key={service.link}
+                to={service.link}
+                className="block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                <div
-                  className={`mb-6 flex h-14 w-14 items-center justify-center rounded-xl transition-all group-hover:scale-110 ${service.iconWrapperClass}`}
+                <motion.div
+                  viewport={{ once: true }}
+                  whileHover={{ y: -8 }}
+                  className="group rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-8 transition-all hover:border-brand-secondary/45"
                 >
-                  <Icon size={28} className={service.iconClass} />
-                </div>
+                  <div
+                    className={`mb-6 flex h-14 w-14 items-center justify-center rounded-xl transition-all group-hover:scale-110 ${service.iconWrapperClass}`}
+                  >
+                    <Icon size={28} className={service.iconClass} />
+                  </div>
 
-                <h3 className="mb-3 text-xl font-semibold text-foreground">
-                  {service.title}
-                </h3>
+                  <h3 className="mb-3 text-xl font-semibold text-foreground">
+                    {service.title}
+                  </h3>
 
-                <p className="mb-4 leading-relaxed text-brand-text-soft">
-                  {service.description}
-                </p>
+                  <p className="mb-4 leading-relaxed text-brand-text-soft">
+                    {service.description}
+                  </p>
 
-                <div className="flex items-center font-medium text-brand-secondary transition-all group-hover:gap-2">
-                  Zjistit více
-                  <ArrowRight
-                    size={16}
-                    className="ml-1 group-hover:translate-x-1 transition-transform"
-                  />
-                </div>
-              </motion.div>
+                  <div className="flex items-center font-medium text-brand-secondary transition-all group-hover:gap-2">
+                    Zjistit více
+                    <ArrowRight
+                      size={16}
+                      className="ml-1 transition-transform group-hover:translate-x-1"
+                    />
+                  </div>
+                </motion.div>
+              </Link>
             );
           })}
         </div>
@@ -120,7 +128,7 @@ export function ServicesSection() {
                 window.scrollTo({ top: offsetPosition, behavior: "smooth" });
               }
             }}
-            className="rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
+            className="rounded-lg cursor-pointer bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
           >
             Poptat projekt
           </button>

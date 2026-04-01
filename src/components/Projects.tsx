@@ -45,7 +45,7 @@ const projects: Project[] = [
   },
 ];
 
-export function PortfolioSection() {
+export function ProjectsSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const renderProjectCard = (project: Project, index: number) => (

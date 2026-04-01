@@ -65,29 +65,19 @@ export function PricingSection() {
       <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-brand-glow-secondary blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
             Přehled projektů
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-brand-text-soft">
             Seznamy webových řešení, které nejčastěji realizuji
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
           {pricingOptions.map((option, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
               className={`relative flex h-full flex-col rounded-2xl border bg-card/70 p-8 transition-all ${
                 option.popular
@@ -131,8 +121,8 @@ export function PricingSection() {
                 onClick={scrollToContact}
                 className={`mt-auto w-full rounded-lg py-3 font-semibold transition-all ${
                   option.popular
-                    ? "bg-brand-primary text-primary-foreground shadow-lg shadow-brand-primary/30 hover:bg-brand-primary-strong"
-                    : "bg-secondary text-secondary-foreground hover:bg-accent"
+                    ? "bg-brand-primary text-primary-foreground cursor-pointer shadow-lg shadow-brand-primary/30 hover:bg-brand-primary-strong"
+                    : "bg-secondary text-secondary-foreground cursor-pointer hover:bg-accent"
                 }`}
               >
                 Poptat projekt
@@ -159,7 +149,7 @@ export function PricingSection() {
             </p>
             <button
               onClick={scrollToContact}
-              className="group inline-flex items-center gap-2 rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
+              className="group inline-flex items-center gap-2 cursor-pointer rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
             >
               Získat cenovou nabídku
               <ArrowRight

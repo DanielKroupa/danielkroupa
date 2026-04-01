@@ -6,7 +6,7 @@ import {
 } from "#/components/AvailabilityStatus";
 import { ContactSection } from "#/components/Contact";
 import { HeroSection } from "#/components/Hero";
-import { PortfolioSection } from "#/components/Portfolio";
+import { ProjectsSection } from "#/components/Projects";
 import { PricingSection } from "#/components/Pricing";
 import { ProcessSection } from "#/components/Process";
 import { ServicesSection } from "#/components/Services";
@@ -32,7 +32,7 @@ function App() {
       <HeroSection />
       <ServicesSection />
       <ProcessSection />
-      <PortfolioSection />
+      <ProjectsSection />
       <PricingSection />
       <AboutSection />
       <ContactSection />

@@ -96,7 +96,7 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.7, delay: 0.7 }}
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
               <button

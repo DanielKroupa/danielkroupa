@@ -173,18 +173,18 @@ export function ContactSection() {
                 <div>
                   <label
                     htmlFor="firstname"
-                    className="mb-2 block text-sm font-medium text-foreground"
+                    className=" block text-sm font-medium text-foreground"
                   >
                     Jméno *
+                    <input
+                      type="text"
+                      id="firstname"
+                      {...register("firstname")}
+                      aria-invalid={Boolean(errors.firstname)}
+                      className="w-full mt-2 rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-brand-secondary focus:outline-none transition-colors"
+                      placeholder="Jan"
+                    />
                   </label>
-                  <input
-                    type="text"
-                    id="firstname"
-                    {...register("firstname")}
-                    aria-invalid={Boolean(errors.firstname)}
-                    className="w-full rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-brand-secondary focus:outline-none transition-colors"
-                    placeholder="Jan"
-                  />
                   <InputError message={errors.firstname?.message} />
                 </div>
 
@@ -354,7 +354,7 @@ export function ContactSection() {
                   className={`w-full py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
                     isSubmitting || (submitted && !isDirty)
                       ? "bg-brand-secondary text-primary-foreground cursor-not-allowed"
-                      : "bg-brand-primary text-primary-foreground shadow-lg shadow-brand-primary/30 hover:scale-105 hover:bg-brand-primary-strong"
+                      : "bg-brand-primary text-primary-foreground cursor-pointer shadow-lg shadow-brand-primary/30 hover:scale-105 hover:bg-brand-primary-strong"
                   }`}
                 >
                   {isSubmitting ? (
