@@ -8,16 +8,16 @@ export function RootNotFound() {
           404
         </p>
         <h1 className="mt-3 text-3xl font-semibold text-foreground">
-          Stranka nebyla nalezena
+          Stránka nebyla nalezena
         </h1>
         <p className="mt-3 text-sm text-foreground-muted">
-          Pozadovana stranka neexistuje nebo byla presunuta.
+          Požadovaná stránka neexistuje nebo byla přesunuta.
         </p>
         <Link
           to="/"
           className="mt-6 inline-flex items-center rounded-full bg-brand-primary px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-primary/90"
         >
-          Zpet na uvod
+          Zpět na úvod
         </Link>
       </section>
     </main>
