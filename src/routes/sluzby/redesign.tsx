@@ -3,10 +3,12 @@ import {
   AlertTriangle,
   ArrowRight,
   CheckCircle2,
+  CircleQuestionMark,
   Code2,
   Eye,
   Globe2,
   LayoutTemplate,
+  MonitorSmartphone,
   RefreshCw,
   Search,
   Settings,
@@ -54,7 +56,7 @@ export function RedesignPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-2 text-2xl font-semibold text-foreground">
-          Kdy víš, že potřebuješ redesign?
+          Kdy víte, že potřebujete redesign?
         </h2>
         <p className="mb-5 text-brand-text-soft">
           Tyto signály jsou jasnou známkou toho, že je čas se webem zabývat.
@@ -62,35 +64,35 @@ export function RedesignPage() {
         <div className="grid gap-3 sm:grid-cols-2">
           {[
             {
-              icon: <Eye size={17} className="text-brand-primary" />,
+              icon: <Eye size={17} className="text-amber-400" />,
               text: "Web vypadá zastarale nebo neprofesionálně a nechcete ho ukazovat potenciálním klientům",
             },
             {
-              icon: <AlertTriangle size={17} className="text-brand-primary" />,
+              icon: <MonitorSmartphone size={17} className="text-amber-400" />,
               text: "Nefunguje správně na mobilech a tabletech, kde dnes přichází většina návštěvníků",
             },
             {
-              icon: <Zap size={17} className="text-brand-primary" />,
-              text: "Načítá se pomalu – a vy víte, že zákazníci nebudou čekat",
+              icon: <Zap size={17} className="text-red-400/75" />,
+              text: "Načítá se pomalu – a vy víte, že zákazníci nemůžou čekat",
             },
             {
-              icon: <Users size={17} className="text-brand-primary" />,
+              icon: <Users size={17} className="text-amber-400" />,
               text: "Lidé na web chodí, ale poptávky nepřicházejí – web nepřesvědčuje",
             },
             {
-              icon: <LayoutTemplate size={17} className="text-brand-primary" />,
+              icon: <LayoutTemplate size={17} className="text-amber-400" />,
               text: "Navigace je matoucí, zákazníci nenajdou co hledají a odcházejí",
             },
             {
-              icon: <Globe2 size={17} className="text-brand-primary" />,
+              icon: <Globe2 size={17} className="text-amber-400" />,
               text: "Web neodráží vaši aktuální značku, nabídku ani positioning",
             },
             {
-              icon: <Search size={17} className="text-brand-primary" />,
+              icon: <Search size={17} className="text-amber-400" />,
               text: "Konkurence vás předbíhá ve vyhledávačích a jejich web prostě působí důvěryhodněji",
             },
             {
-              icon: <Code2 size={17} className="text-brand-primary" />,
+              icon: <Code2 size={17} className="text-amber-400" />,
               text: "Každá malá úprava je technicky složitá nebo drahá – web se nedá snadno rozvíjet",
             },
           ].map(({ icon, text }) => (
@@ -98,7 +100,7 @@ export function RedesignPage() {
               key={text}
               className="flex items-start gap-3 rounded-xl bg-background/60 p-4"
             >
-              <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-primary/15">
+              <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-400/15">
                 {icon}
               </div>
               <p className="text-sm text-brand-text-soft">{text}</p>
@@ -121,7 +123,7 @@ export function RedesignPage() {
                 Analýza vždy jako první krok
               </p>
               <p className="text-sm text-brand-text-soft">
-                Nepoustuji se rovnou do designu. Nejprve pochopím, co na
+                Nepouštím se rovnou do nového designu. Nejprve pochopím, co na
                 stávajícím webu nefunguje, proč lidé odcházejí a co naopak stojí
                 za zachování. Redesign stavím na datech, ne na dojmech.
               </p>
@@ -311,7 +313,7 @@ export function RedesignPage() {
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Search className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -325,7 +327,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Eye className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -339,7 +341,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <LayoutTemplate className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -353,7 +355,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <CheckCircle2 className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -367,7 +369,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Zap className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -379,7 +381,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Globe2 className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -394,7 +396,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Code2 className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -408,7 +410,7 @@ export function RedesignPage() {
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15">
+            <div className="mt-1 flex p-2 w-fit h-fit items-center justify-center rounded-full bg-brand-primary/15">
               <Settings className="text-brand-primary" size={18} />
             </div>
             <div>
@@ -426,7 +428,7 @@ export function RedesignPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <Users className="h-6 w-6 text-brand-primary" />
+          <CircleQuestionMark className="h-6 w-6 text-brand-primary" />
           Pro koho je redesign webu ideální
         </h2>
         <p className="mb-3 text-brand-text-soft">

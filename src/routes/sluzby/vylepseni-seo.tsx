@@ -2,8 +2,8 @@
 import {
   ArrowRight,
   BarChart2,
-  CheckCircle2,
   Clock,
+  DollarSign,
   FileText,
   Globe2,
   Link,
@@ -99,72 +99,6 @@ export function SeoImprovementsPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          Proč mi svěřit SEO vašeho webu
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          <div className="flex gap-3 rounded-xl bg-brand-primary/5 p-4">
-            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15">
-              <Search className="text-brand-primary" size={18} />
-            </div>
-            <div>
-              <p className="font-semibold text-foreground">
-                SEO postavené na datech
-              </p>
-              <p className="text-sm text-brand-text-soft">
-                Nepracuji na dojmu ani náhodě. Každé rozhodnutí vychází z
-                analýzy – klíčová slova, konkurence, chování uživatelů a
-                technický stav webu.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
-            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
-              <Users className="text-brand-secondary" size={18} />
-            </div>
-            <div>
-              <p className="font-semibold text-foreground">
-                Jeden člověk, jasná domluva
-              </p>
-              <p className="text-sm text-brand-text-soft">
-                Mluvíte přímo se mnou – bez prostředníků, account manažerů ani
-                nekonečných e-mailových vláken. Vždy víte, co se děje a proč.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3 rounded-xl bg-brand-primary/5 p-4">
-            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15">
-              <TrendingUp className="text-brand-primary" size={18} />
-            </div>
-            <div>
-              <p className="font-semibold text-foreground">
-                Dlouhodobé výsledky, ne krátkodobé triky
-              </p>
-              <p className="text-sm text-brand-text-soft">
-                Vyhýbám se praktikám, které mohou dočasně zlepšit čísla, ale
-                dlouhodobě web poškozují. Stavím SEO, které vydrží a roste.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
-            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
-              <CheckCircle2 className="text-brand-secondary" size={18} />
-            </div>
-            <div>
-              <p className="font-semibold text-foreground">
-                SEO propojené se zbytkem webu
-              </p>
-              <p className="text-sm text-brand-text-soft">
-                Protože se starám i o vývoj a design, nevnímám SEO izolovaně.
-                Řeším ho v kontextu celého webu – obsah, rychlost, strukturu i
-                techniku dohromady.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
-        <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
           <Settings className="h-6 w-6 text-brand-primary" />
           Jak SEO spolupráce probíhá
         </h2>
@@ -253,7 +187,6 @@ export function SeoImprovementsPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <Search className="h-6 w-6 text-brand-primary" />
           Co zahrnuje práce na SEO
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
@@ -280,8 +213,8 @@ export function SeoImprovementsPage() {
             },
             {
               icon: <Settings className="text-brand-primary" size={18} />,
-              title: "Nastavení Google Search Console",
-              desc: "Propojení webu s Googlem, odesílání sitemapy a sledování chyb v indexaci.",
+              title: "Nastavení vyhledávačů",
+              desc: "Propojení webu s vyhledávači, odesílání struktury stránek a sledování chyb v indexaci.",
             },
             {
               icon: <BarChart2 className="text-brand-primary" size={18} />,
@@ -307,7 +240,7 @@ export function SeoImprovementsPage() {
 
       <section className="mb-4 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <BarChart2 className="h-6 w-6 text-brand-primary" />
+          <DollarSign className="h-6 w-6 text-brand-primary" />
           Jaká je cena za SEO
         </h2>
         <p className="mb-3 text-brand-text-soft">
@@ -317,8 +250,8 @@ export function SeoImprovementsPage() {
         </p>
         <p className="mb-4 text-brand-text-soft">
           Začneme krátkou nezávaznou konzultací, kde mi řeknete, s čím bojujete.
-          Já se podívám na web a navrhnu konkrétní postup s jasnou cenou, za co
-          přesně platíte.
+          Já se podívám na web a navrhnu konkrétní postup s jasnou cenou, ať
+          víte, za co přesně platíte.
         </p>
         <div className="inline-flex items-center gap-2 rounded-full border border-brand-secondary/40 bg-brand-secondary/10 px-4 py-2 text-sm font-medium text-brand-secondary">
           <ArrowRight size={16} />

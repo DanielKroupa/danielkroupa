@@ -35,7 +35,7 @@ const pricingOptions = [
   },
   {
     title: "Webová aplikace",
-    description: "Řešení šité na míru vašim potřebám",
+    description: "Můžu vám ušít web na míru dle funkcí níže.",
     features: [
       "Digitalizace a automatizace procesů",
       "Napojení na stávající systémy",

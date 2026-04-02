@@ -4,8 +4,11 @@ import {
   CheckCircle2,
   Clock,
   Code2,
+  DollarSign,
+  Globe,
   LayoutTemplate,
-  Users,
+  MessageCircle,
+  User,
 } from "lucide-react";
 import { ServiceDetailTemplate } from "#/components/sections/ServiceDetail";
 import { createSeoHead } from "#/lib/seo/meta";
@@ -60,29 +63,30 @@ export function WebDevelopmentPage() {
                 Zkušenosti z praxe
               </p>
               <p className="text-sm text-brand-text-soft">
-                8 let zkušeností s weby pro malé firmy, živnostníky, tvůrce
-                obsahu i agentury – vím, co v praxi funguje a co jsou jen módní
+                přes 4 roky zkušeností s weby pro malé firmy, živnostníky a
+                tvůrci obsahu – vím, co v praxi funguje a co jsou jen módní
                 výstřelky.
               </p>
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
             <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
-              <Users className="text-brand-secondary" size={18} />
+              <User className="text-brand-secondary" size={18} />
             </div>
             <div>
               <p className="font-semibold text-foreground">
                 Jeden člověk, jasná domluva
               </p>
               <p className="text-sm text-brand-text-soft">
-                Nejste číslo v agentuře. Mluvíte přímo s člověkem, který váš web
-                navrhuje i vyvíjí – bez zbytečného předávání a ztráty informací.
+                Nejste číslo jako v agentuře. Mluvíte přímo s člověkem, který
+                váš web navrhuje i vyvíjí – bez zbytečného předávání a ztráty
+                informací.
               </p>
             </div>
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-primary/5 p-4">
             <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15">
-              <LayoutTemplate className="text-brand-primary" size={18} />
+              <MessageCircle className="text-brand-primary" size={18} />
             </div>
             <div>
               <p className="font-semibold text-foreground">
@@ -96,7 +100,7 @@ export function WebDevelopmentPage() {
           </div>
           <div className="flex gap-3 rounded-xl bg-brand-secondary/5 p-4">
             <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-secondary/15">
-              <CheckCircle2 className="text-brand-secondary" size={18} />
+              <Globe className="text-brand-secondary" size={18} />
             </div>
             <div>
               <p className="font-semibold text-foreground">
@@ -121,8 +125,8 @@ export function WebDevelopmentPage() {
           nachází a co je zrovna potřeba.
         </p>
         <ol className="space-y-4 text-brand-text-soft">
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-fit w-fit p-2 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               1
             </div>
             <div>
@@ -134,8 +138,8 @@ export function WebDevelopmentPage() {
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               2
             </div>
             <div>
@@ -150,8 +154,8 @@ export function WebDevelopmentPage() {
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               3
             </div>
             <div>
@@ -166,8 +170,8 @@ export function WebDevelopmentPage() {
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               4
             </div>
             <div>
@@ -180,8 +184,8 @@ export function WebDevelopmentPage() {
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               5
             </div>
             <div>
@@ -196,30 +200,29 @@ export function WebDevelopmentPage() {
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               6
             </div>
             <div>
               <p className="font-semibold text-foreground">Spuštění webu</p>
               <p className="text-sm">
                 Jakmile je vše doladěné, připravím web ke spuštění na vaší
-                doméně a ověřím, že je vše dostupné a funkční. Od této chvíle
-                váš web maká pro vás 24/7 a můžete ho naplno využít v
-                marketingu.
+                doméně, zprovozním online a ověřím, že je vše dostupné a
+                funkční. Od této chvíle váš web maká pro vás 24/7 a můžete ho
+                naplno využít v marketingu.
               </p>
             </div>
           </li>
-          <li className="flex gap-3 rounded-xl bg-background/60 p-4">
-            <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary/15 text-sm font-semibold text-brand-primary">
+          <li className="flex gap-3 rounded-xl bg-background/60 p-2">
+            <div className="mt-1 text-4xl flex p-2 items-start justify-start rounded-full font-semibold text-brand-primary">
               7
             </div>
             <div>
               <p className="font-semibold text-foreground">Co se děje potom</p>
               <p className="text-sm">
                 Spuštěním spolupráce nekončí. Podle domluvy se můžeme dlouhodobě
-                starat o údržbu, drobné úpravy i větší rozvoj webu – bez
-                složitého nahlašování přes podporu.
+                starat o údržbu, drobné úpravy i větší rozvoj webu.
               </p>
             </div>
           </li>
@@ -395,7 +398,7 @@ export function WebDevelopmentPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <Users className="h-6 w-6 text-brand-primary" />
+          <User className="h-6 w-6 text-brand-primary" />
           Pro koho je vývoj webu se mnou ideální
         </h2>
         <p className="mb-3 text-brand-text-soft">
@@ -414,22 +417,27 @@ export function WebDevelopmentPage() {
 
       <section className="mb-10 rounded-2xl border border-border bg-card/70 p-4 sm:p-5 md:p-8">
         <h2 className="mb-4 flex items-center gap-3 text-2xl font-semibold text-foreground">
-          <Clock className="h-6 w-6 text-brand-primary" />
+          <DollarSign className="h-6 w-6 text-brand-primary" />
           Jaká je cena za tvorbu webu
         </h2>
         <p className="mb-3 text-brand-text-soft">
-          Každý web je univerzální – jiný rozsah, počet stránek, množství obsahu
-          i speciálních funkcí. Proto cenu nestřílím „od stolu“, ale vždy ji
-          připravuji na míru vašemu projektu a podnikání.
+          <b>Každý web je univerzální</b> – jiný rozsah, počet stránek, množství
+          obsahu i speciálních funkcí. Proto cenu nestřílím „od stolu“, ale vždy
+          ji připravuji na míru vašemu projektu a podnikání.
         </p>
         <p className="mb-3 text-brand-text-soft">
           Postup je jednoduchý: krátká nezávazná konzultace, kde probereme vaše
           představy a cíle, poté navrhnu vhodné řešení, rozsah webu a připravím
           přehlednou cenovou nabídku, kde uvidíte, za co přesně platíte.
         </p>
-        <p className="text-brand-text-soft">
+        <p className="mb-3 text-brand-text-soft">
           Díky tomu předem víte, s čím můžete počítat, a společně najdeme
           variantu, která dává smysl jak z pohledu výsledku, tak rozpočtu.
+        </p>
+        <p className=" text-brand-text-soft">
+          Máte představu o rozpočtu? ale nejste si jistí, co vše za něj
+          dostanete? Řeknu vám, jaké máte dostupné možnosti a pomůžu s
+          přizpůsobením projektu vašim finančním možnostem.
         </p>
       </section>
 

@@ -20,12 +20,12 @@ const faqs = [
   {
     question: "Jak dlouho trvá vývoj webu?",
     answer:
-      "Záleží na rozsahu projektu. Jednoduchý landing page je hotový za 3-6 týdnů, komplexní firemní web za 1-3 měsíců a webová aplikace může trvat několik měsíců dle složitosti. Po analýze vašich požadavků vám poskytnu časový odhad a přibližnou cenu.",
+      "Záleží na rozsahu projektu. Jednoduchý landing page je hotový za 3-6 týdnů, komplexní firemní web za 1-3 měsíců a webová aplikace může trvat několik měsíců a více dle složitosti. Po analýze vašich požadavků vám poskytnu časový odhad a přibližnou cenu.",
   },
   {
     question: "Budou webové stránky responzivní?",
     answer:
-      "Ano, všechny weby vytvářím jako plně responzivní, což znamená, že perfektně fungují na všech zařízeních - počítače, tablety i mobilní telefony. To je dnes naprosto nezbytné pro dobrou uživatelskou zkušenost i zobrazení ve vyhledávačích.",
+      "Ano, všechny weby vytvářím jako plně responzivní, což znamená, že perfektně fungují na všech zařízeních - počítače, tablety i mobilní telefony. To je dnes naprosto nezbytné pro dobrou uživatelskou zkušenost i zobrazení ve všech vyhledávačích.",
   },
   {
     question: "Potřebuji připravit nějaké podklady?",
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: "Mohu vidět ukázky vašich prací?",
     answer:
-      "Samozřejmě! V sekci Portfolio na hlavní stránce najdete ukázky realizovaných projektů. Během konzultace vám rád ukážu další projekty, které odpovídají vašim představám a oboru podnikání.",
+      "Samozřejmě! V sekci Projekty na hlavní stránce najdete ukázky realizovaných projektů. Během konzultace vám rád ukážu další nepublikované projekty, pokud by měly odpovídat vašim představám a oboru podnikání.",
   },
 ];
 

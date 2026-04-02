@@ -157,10 +157,10 @@ export function ProjectsSection() {
             );
           })}
         </div>
-        <div className="mx-auto max-w-3xl mt-8 rounded-2xl border border-brand-secondary/30 bg-linear-to-br from-brand-primary/12 to-brand-secondary/12 p-8">
-          <p className="mx-auto max-w-6xl text-xl text-brand-text-soft">
+        <div className="mx-auto max-w-5xl mt-8 rounded-2xl border border-brand-secondary/30 bg-linear-to-br from-brand-primary/12 to-brand-secondary/12 p-8">
+          <p className="mx-auto text-lg text-brand-text-soft">
             Ukázky, které vidíte, jsou malá část všech mých realizací. Další
-            projekty či navržené designy vám rád poskytnu jako inspiraci po
+            projekty či navržené designy vám rád poskytnu k náhlednutí po
             domluvě.
           </p>
         </div>
