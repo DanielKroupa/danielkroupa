@@ -12,6 +12,7 @@ export const Route = createFileRoute("/faq")({
       description:
         "Často kladené otázky o tvorbě webových stránek, spolupráci, ceně, termínech i SEO. ",
       path: "/faq",
+      noIndex: true,
     }),
   component: FAQPage,
 });

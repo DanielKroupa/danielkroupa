@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { createSeoHead } from "#/lib/seo/meta";
 
@@ -9,6 +9,7 @@ export const Route = createFileRoute("/terms")({
       description:
         "Obchodní podmínky pro vývoj webů na míru, redesign, SEO optimalizaci a související služby.",
       path: "/terms",
+      noIndex: true,
     }),
   component: TermsPage,
 });

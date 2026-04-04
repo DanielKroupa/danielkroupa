@@ -11,6 +11,7 @@ export const Route = createFileRoute("/privacy")({
       description:
         "Informace o zpracování osobních údajů, používání cookies a ochraně soukromí.",
       path: "/privacy",
+      noIndex: true,
     }),
   component: PrivacyPage,
 });
