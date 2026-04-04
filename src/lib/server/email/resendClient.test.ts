@@ -17,12 +17,31 @@ describe("getResendClient", () => {
 
     expect(() => getResendClient()).toThrow("RESEND_API_KEY");
   });
+
+  it("accepts api key wrapped in quotes", () => {
+    process.env.RESEND_API_KEY = '"re_test_123"';
+
+    expect(() => getResendClient()).not.toThrow();
+  });
 });
 
 describe("getContactEmailConfig", () => {
   it("returns validated addresses from environment", () => {
     process.env.CONTACT_FROM_EMAIL = "noreply@example.com";
     process.env.CONTACT_TO_EMAIL = "owner@example.com";
+    process.env.NODE_ENV = "test";
+
+    const config = getContactEmailConfig();
+
+    expect(config).toEqual({
+      from: "noreply@example.com",
+      to: "owner@example.com",
+    });
+  });
+
+  it("normalizes quoted values from environment", () => {
+    process.env.CONTACT_FROM_EMAIL = '"noreply@example.com"';
+    process.env.CONTACT_TO_EMAIL = "'owner@example.com'";
     process.env.NODE_ENV = "test";
 
     const config = getContactEmailConfig();
@@ -53,5 +72,13 @@ describe("getContactEmailConfig", () => {
     process.env.NODE_ENV = "production";
 
     expect(() => getContactEmailConfig()).toThrow("onboarding@resend.dev");
+  });
+
+  it("requires sender on danielkroupa.cz in production", () => {
+    process.env.CONTACT_FROM_EMAIL = "noreply@example.com";
+    process.env.CONTACT_TO_EMAIL = "owner@example.com";
+    process.env.NODE_ENV = "production";
+
+    expect(() => getContactEmailConfig()).toThrow("danielkroupa.cz");
   });
 });

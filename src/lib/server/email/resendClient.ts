@@ -12,8 +12,30 @@ const INVALID_ENV_MESSAGE =
 const INVALID_PRODUCTION_FROM_MESSAGE =
   "CONTACT_FROM_EMAIL nesmí být onboarding@resend.dev v produkčním prostředí.";
 
+const INVALID_PRODUCTION_FROM_DOMAIN_MESSAGE =
+  "CONTACT_FROM_EMAIL musí být na doméně danielkroupa.cz v produkčním prostředí.";
+
+const PRODUCTION_FROM_DOMAIN = "danielkroupa.cz";
+
+function normalizeEnvValue(value: string | undefined) {
+  if (!value) {
+    return "";
+  }
+
+  const trimmed = value.trim();
+
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    return trimmed.slice(1, -1).trim();
+  }
+
+  return trimmed;
+}
+
 function readRequiredEmailEnv(name: "CONTACT_FROM_EMAIL" | "CONTACT_TO_EMAIL") {
-  const value = process.env[name]?.trim();
+  const value = normalizeEnvValue(process.env[name]);
 
   if (!value) {
     throw new Error(MISSING_ENV_MESSAGE);
@@ -27,7 +49,7 @@ function isEmailAddress(value: string) {
 }
 
 export function getResendClient() {
-  const apiKey = process.env.RESEND_API_KEY;
+  const apiKey = normalizeEnvValue(process.env.RESEND_API_KEY);
 
   if (!apiKey) {
     throw new Error(MISSING_API_KEY_MESSAGE);
@@ -49,6 +71,13 @@ export function getContactEmailConfig() {
     from.toLowerCase() === "onboarding@resend.dev"
   ) {
     throw new Error(INVALID_PRODUCTION_FROM_MESSAGE);
+  }
+
+  if (
+    process.env.NODE_ENV === "production" &&
+    !from.toLowerCase().endsWith(`@${PRODUCTION_FROM_DOMAIN}`)
+  ) {
+    throw new Error(INVALID_PRODUCTION_FROM_DOMAIN_MESSAGE);
   }
 
   return { from, to };

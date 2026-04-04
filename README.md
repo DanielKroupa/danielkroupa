@@ -41,8 +41,45 @@ Important:
 
 - `CONTACT_FROM_EMAIL` must be a verified sender/domain in Resend
 - in production, `CONTACT_FROM_EMAIL` must not be `onboarding@resend.dev`
+- in production, `CONTACT_FROM_EMAIL` should be on `@danielkroupa.cz`
 
-### 3. Verify Before Deploy
+### 3. Production Email Runbook (Resend + WEDOS DNS + Seznam mailbox)
+
+This project sends contact form emails through Resend server functions.
+
+Recommended production values:
+
+- `CONTACT_FROM_EMAIL=noreply@danielkroupa.cz`
+- `CONTACT_TO_EMAIL=info@danielkroupa.cz`
+
+Setup steps:
+
+1. In Resend, add domain `danielkroupa.cz` and open DNS verification details.
+2. In WEDOS DNS, add all records required by Resend (verification + DKIM + SPF related records shown in Resend).
+3. Keep Seznam inbox routing intact:
+
+- do not remove existing MX records used for incoming mail to `info@danielkroupa.cz`
+
+4. SPF rule:
+
+- keep exactly one SPF TXT record for the root domain
+- if SPF already exists for Seznam, merge includes into that single record (do not create a second SPF TXT)
+
+5. Wait for DNS propagation and confirm domain status is `Verified` in Resend.
+6. In Vercel Project Settings, set env vars for both Preview and Production:
+
+- `RESEND_API_KEY`
+- `CONTACT_FROM_EMAIL`
+- `CONTACT_TO_EMAIL`
+
+7. Trigger a production deploy and submit a live contact form test.
+8. Verify:
+
+- email arrived to `info@danielkroupa.cz`
+- confirmation email was sent to the form submitter
+- Resend Activity shows successful delivery and message IDs
+
+### 4. Verify Before Deploy
 
 ```bash
 npm ci
