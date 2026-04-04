@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/img/noindex/projects/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noimageindex, noarchive"
+        }
+      ]
+    }
+  ]
+}
