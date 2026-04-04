@@ -134,7 +134,7 @@ export function Navbar({
   };
 
   const ctaClass =
-    "rounded-lg cursor-pointer bg-brand-primary px-6 py-2 text-primary-foreground transition-all hover:bg-brand-primary-strong";
+    "rounded-lg cursor-pointer bg-brand-primary px-6 md:py-2 py-2.5 text-primary-foreground transition-all !text-center hover:bg-brand-primary-strong";
   const navLinkClass =
     "cursor-pointer text-foreground transition-colors hover:text-brand-secondary";
 
