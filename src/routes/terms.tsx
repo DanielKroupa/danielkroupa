@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { createSeoHead } from "#/lib/seo/meta";
 
@@ -64,11 +64,11 @@ export function TermsPage() {
           <div className="space-y-8">
             <div className="rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-8 shadow-lg shadow-brand-primary/10">
               <p className="mb-4 leading-relaxed text-foreground/85">
-                Tyto obchodní podmínky upravují práva a povinnosti smluvních
-                stran při poskytování služeb webového vývoje.
+                Tyto obchodní podmínky upravují pravidla spolupráce mezi
+                Poskytovatelem a Objednatelem při realizaci webových služeb.
               </p>
               <p className="text-sm text-brand-text-soft">
-                Poslední aktualizace: 28. března 2026
+                Poslední aktualizace: 4. dubna 2026
               </p>
             </div>
 
@@ -78,64 +78,89 @@ export function TermsPage() {
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  Tyto obchodní podmínky upravují vztahy mezi poskytovatelem
-                  služeb (dále jen "Poskytovatel") a Objednatelem (dále jen
-                  "Objednatel") při poskytování služeb v oblasti vývoje webových
-                  stránek a aplikací.
+                  Tyto obchodní podmínky (dále jen "Podmínky") upravují práva a
+                  povinnosti mezi Poskytovatelem a Objednatelem při poskytování
+                  služeb v oblasti Vývoje webu, Redesignu stránek, Vylepšení
+                  SEO, Webové analytiky, Optimalizace webu a související
+                  technické podpory.
+                </p>
+                <p>
+                  Služby se dělí na projektové služby s konkrétním výstupem
+                  (dílo) a průběžné odborné služby bez jednorázového finálního
+                  výstupu.
+                </p>
+                <p>
+                  <strong className="text-foreground">Poskytovatel:</strong>{" "}
+                  Daniel Kroupa, fyzická osoba. kontakt: info@danielkroupa.cz,
+                  +420 605 465 600.
+                </p>
+                <p>
+                  <strong className="text-foreground">Objednatel:</strong>{" "}
+                  fyzická nebo právnická osoba, která si služby objedná na
+                  základě nabídky, objednávky nebo smlouvy.
                 </p>
               </div>
+              <p>
+                <strong className="text-foreground"></strong> Objednatel
+                potvrzuje, že se s těmito obchodními podmínkami obeznámil a
+                vyjadřuje svůj souhlas s jejich zněním.
+              </p>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                2. Předmět smlouvy
+                2. Rozsah poskytovaných služeb
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  Předmětem smlouvy je poskytnutí některé z následujících
-                  služeb:
+                  Poskytovatel nabízí projektové služby s konkrétním výstupem:
                 </p>
                 <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
-                  <li>Vývoj webových stránek a aplikací na míru</li>
-                  <li>Redesign existujících webových řešení</li>
-                  <li>Optimalizace výkonu a SEO</li>
-                  <li>Technická podpora a údržba</li>
-                  <li>Konzultační služby v oblasti webových technologií</li>
+                  <li>Vývoj webu (webové stránky a aplikace na míru),</li>
+                  <li>Redesign stránek a modernizace stávajících řešení.</li>
                 </ul>
+                <p>
+                  Poskytovatel současně nabízí průběžné odborné služby bez
+                  jednorázového finálního díla:
+                </p>
+                <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
+                  <li>Vylepšení SEO (technické i obsahové úpravy),</li>
+                  <li>Webová analytika (nastavení, měření a vyhodnocování),</li>
+                  <li>Optimalizace webu (výkon, stabilita, UX),</li>
+                  <li>konzultace v oblasti webových technologií,</li>
+                  <li>údržba a následná technická podpora.</li>
+                </ul>
+                <p>
+                  Konkrétní rozsah služeb je vždy definován v individuální
+                  nabídce, objednávce nebo smlouvě. Co není výslovně sjednáno,
+                  není součástí ceny projektu.
+                </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                3. Průběh spolupráce
+                3. Uzavření spolupráce a podklady
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
                   <strong className="text-foreground">
-                    3.1 Konzultace a nabídka:
+                    3.1 Vznik smluvního vztahu:
                   </strong>{" "}
-                  Po počáteční konzultaci Poskytovatel připraví cenovou nabídku
-                  a časový harmonogram projektu.
+                  Proces uzavření spolupráce vzniká zaplacením zálohové faktury
+                  Objednatelem nebo uzavřením samostatné smlouvy. Tímto se celý
+                  proces spolupráce stává závazným okamžikem.
                 </p>
                 <p>
-                  <strong className="text-foreground">3.2 Smlouva:</strong>{" "}
-                  Projekt začíná po vzájemné dohodě a podpisu smlouvy nebo
-                  písemného potvrzení objednávky.
+                  <strong className="text-foreground">3.2 Podklady:</strong>{" "}
+                  Objednatel poskytne veškeré podklady potřebné pro realizaci
+                  projektu (texty, fotografie, přístupy, brand manuál a další
+                  materiály) ve sjednaných termínech pokud není uvedeno jinak.
                 </p>
+
                 <p>
-                  <strong className="text-foreground">3.3 Vývoj:</strong>{" "}
-                  Poskytovatel průběžně informuje Objednatele o stavu projektu a
-                  předkládá návrhy ke schválení.
-                </p>
-                <p>
-                  <strong className="text-foreground">3.4 Testování:</strong>{" "}
-                  Před spuštěním je projekt důkladně otestován. Objednatel má
-                  možnost vyjádřit připomínky.
-                </p>
-                <p>
-                  <strong className="text-foreground">3.5 Předání:</strong> Po
-                  úspěšném testování a schválení je projekt spuštěn a předán
-                  Objednateli.
+                  Pokud Objednatel neposkytne potřebnou součinnost, mohou být
+                  termíny realizace přiměřeně posunuty.
                 </p>
               </div>
             </section>
@@ -146,163 +171,258 @@ export function TermsPage() {
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  <strong className="text-foreground">4.1 Cena:</strong> Cena je
-                  stanovena individuálně na základě rozsahu projektu, je uvedena
-                  v cenové nabídce a předána Objednateli.
-                </p>
-                <p>
-                  <strong className="text-foreground">4.2 Platby:</strong>{" "}
-                  Standardně je vyžadována záloha ve výši 50% před zahájením
-                  prací a doplatek po dokončení projektu. U rozsáhlejších
-                  projektů může být platba rozdělena do více splátek.
-                </p>
-                <p>
-                  <strong className="text-foreground">4.3 Splatnost:</strong>{" "}
-                  Faktury jsou splatné do 14 dnů od vystavení, pokud není
-                  dohodnuto jinak.
+                  <strong className="text-foreground">4.1 Cena:</strong>{" "}
+                  stanovuje se individuálně podle typu služby, rozsahu a
+                  složitosti. Pokud není dohodnuto jinak, ceny jsou uvedeny bez
+                  DPH.
                 </p>
                 <p>
                   <strong className="text-foreground">
-                    4.4 Dodatečné práce:
+                    4.2 Projektové služby:
                   </strong>{" "}
-                  Změny rozsahu projektu po jeho schválení mohou být zpoplatněny
-                  podle aktuální hodinové sazby.
+                  u služeb Vývoj webu a Redesign stránek Objednatel hradí po
+                  schválení nabídky první zálohu ve výši 1/3 ceny. Po dokončení
+                  struktury a designu je vystavena druhá zálohová faktura ve
+                  výši 2/3 ceny. Zbývající část ceny je fakturována po dokončení
+                  a spuštění projektu.
+                </p>
+
+                <p>
+                  <strong className="text-foreground">
+                    4.3 Průběžné služby:
+                  </strong>{" "}
+                  u služeb Vylepšení SEO, Webová analytika a Optimalizace webu
+                  probíhá fakturace průběžně (typicky měsíčně) dle sjednaného
+                  rozsahu a období.
+                </p>
+                <p>
+                  <strong className="text-foreground">4.4 Splatnost:</strong>{" "}
+                  faktury jsou splatné do 14 kalendářních dnů od data vystavení,
+                  není-li dohodnuto jinak.
+                </p>
+                <p>
+                  <strong className="text-foreground">
+                    4.5 Změny zadání a nadlimitní práce:
+                  </strong>{" "}
+                  změny rozsahu po schválení nabídky jsou považovány za
+                  vícepráce a jsou účtovány dle sazby 700 Kč/hod nebo dle
+                  samostatné cenové nabídky.
+                </p>
+                <p>
+                  <strong className="text-foreground">4.6 Prodlení:</strong> v
+                  případě prodlení s úhradou je Poskytovatel oprávněn pozastavit
+                  práce do úplného uhrazení splatných závazků.
+                </p>
+                <p>
+                  Zároveň má Poskytovatel právo započíst úrok z prodlení ve výši
+                  0,1% z dlužné částky za každý den prodlení.
                 </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                5. Povinnosti Objednatele
+                5. Harmonogram a předání
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
-                <p>Objednatel se zavazuje:</p>
+                <p>
+                  Termín realizace a časový rozsah je orientační s ohledem na
+                  složitost projektu a součinnost Objednatele.
+                </p>
+                <p>
+                  Projektová služba je považována za předanou okamžikem předání
+                  výstupů, nasazení na hosting třetí strany nebo zpřístupnění
+                  repozitáře, podle povahy projektu.
+                </p>
+                <p>
+                  U průběžných služeb (Vylepšení SEO, Webová analytika,
+                  Optimalizace webu) probíhá plnění kontinuálně formou
+                  implementací, reportů, doporučení a vyhodnocení, nikoli jako
+                  jednorázové předání díla.
+                </p>
+                <p>
+                  Pokud Objednatel u projektových služeb neoznámí podstatné vady
+                  bez zbytečného odkladu do 30 dnů od data předání (není-li
+                  uvedeno jinak), má se za to, že výstup převzal ve stavu, v
+                  jakém byl předán.
+                </p>
+              </div>
+            </section>
+
+            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+              <h2 className="mb-4 text-3xl font-bold text-foreground">
+                6. Změnové požadavky
+              </h2>
+              <div className="space-y-4 leading-relaxed text-brand-text-soft">
+                <p>
+                  Změny konceptu designu, funkčního rozsahu nebo struktury po
+                  schválení zadání se považují za nový požadavek a jsou účtovány
+                  jako vícepráce.
+                </p>
+                <p>
+                  Oprava prokazatelné chyby Poskytovatelem oproti schválenému
+                  zadání není považována za vícepráci.
+                </p>
+              </div>
+            </section>
+
+            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+              <h2 className="mb-4 text-3xl font-bold text-foreground">
+                7. Práva a povinnosti smluvních stran
+              </h2>
+              <div className="space-y-4 leading-relaxed text-brand-text-soft">
+                <p>
+                  <strong className="text-foreground">Objednatel:</strong>
+                </p>
                 <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
                   <li>
-                    Poskytnout včas všechny potřebné podklady (texty, loga,
-                    fotografie) pokud není domluveno jinak.
+                    garantuje, že podklady poskytnuté Poskytovateli neporušují
+                    práva třetích osob,
                   </li>
-                  <li>Reagovat na návrhy a dotazy v přiměřené době</li>
-                  <li>Zaplatit dohodnutou cenu dle platebních podmínek</li>
-                  <li>Respektovat autorská práva Poskytovatele</li>
+                  <li>
+                    poskytne součinnost potřebnou k řádnému plnění zakázky,
+                  </li>
+                  <li>uhradí cenu za službu v souladu s těmito Podmínkami.</li>
+                </ul>
+                <p>
+                  <strong className="text-foreground">Poskytovatel:</strong>
+                </p>
+                <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
+                  <li>
+                    postupuje s odbornou péčí a v souladu se schváleným zadáním,
+                  </li>
+                  <li>
+                    informuje Objednatele o stavu zakázky v přiměřených
+                    intervalech,
+                  </li>
+                  <li>
+                    zachovává mlčenlivost o neveřejných informacích Objednatele.
+                  </li>
                 </ul>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                6. Povinnosti Poskytovatele
-              </h2>
-              <div className="space-y-4 leading-relaxed text-brand-text-soft">
-                <p>Poskytovatel se zavazuje:</p>
-                <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
-                  <li>Vytvořit projekt v dohodnuté kvalitě a termínu</li>
-                  <li>Průběžně informovat o stavu projektu</li>
-                  <li>Zajistit funkčnost a otestování řešení</li>
-                  <li>Poskytnout základní zaškolení a dokumentaci</li>
-                  <li>
-                    Zachovávat mlčenlivost o obchodních informacích Objednatele
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
-              <h2 className="mb-4 text-3xl font-bold text-foreground">
-                7. Autorská práva
+                8. Autorská práva a licence
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  <strong className="text-foreground">7.1 Zdrojový kód:</strong>{" "}
-                  Po úplném zaplacení ceny přechází majetková práva k
-                  vytvořenému dílu na Poskytovatele.
+                  <strong className="text-foreground">
+                    8.1 Projektové výstupy:
+                  </strong>{" "}
+                  u služeb Vývoj webu a Redesign stránek přechází majetková
+                  práva k dílu nebo licence v dohodnutém rozsahu na Objednatele
+                  až po úplném uhrazení ceny.
                 </p>
                 <p>
-                  <strong className="text-foreground">7.2 Portfolio:</strong>{" "}
-                  Poskytovatel má právo použít realizovaný projekt ve svém
-                  portfoliu a pro marketingové účely, pokud není dohodnuto
-                  jinak.
+                  <strong className="text-foreground">
+                    8.2 Výstupy průběžných služeb:
+                  </strong>{" "}
+                  u služeb Vylepšení SEO, Webová analytika a Optimalizace webu
+                  získává Objednatel právo užívat dodané výstupy (např.
+                  nastavení, reporty, doporučení) v rozsahu sjednaném pro danou
+                  zakázku.
+                </p>
+
+                <p>
+                  <strong className="text-foreground">8.3 Portfolio:</strong>{" "}
+                  Poskytovatel je oprávněn zveřejnit realizovaný projekt ve svém
+                  portfoliu, není-li písemně dohodnuto jinak.
                 </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                8. Záruka a podpora
+                9. Odpovědnost a omezení odpovědnosti
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  <strong className="text-foreground">8.1 Záruka:</strong>{" "}
-                  Poskytovatel poskytuje záruku na funkčnost vytvořeného řešení
-                  po dobu 30 dnů od předání. U větších a složitějších projektů
-                  je doba záruky posuzována a navrhnuta individuálně.
+                  Poskytovatel neodpovídá za škody způsobené nesprávným
+                  používáním výstupů, neodbornými zásahy třetích stran, změnami
+                  v externích službách nebo neposkytnutím součinnosti ze strany
+                  Objednatele.
                 </p>
                 <p>
-                  <strong className="text-foreground">8.2 Podpora:</strong>{" "}
-                  Technická podpora a údržba po záruční době je poskytována na
-                  základě samostatné dohody.
+                  Poskytovatel neodpovídá za právní soulad textů, fotografií,
+                  ochranných známek a dalších podkladů dodaných Objednatelem.
+                </p>
+                <p>
+                  U služeb Vylepšení SEO, Webová analytika a Optimalizace webu
+                  Poskytovatel trvale negarantuje konkrétní pozice ve
+                  vyhledávačích, návštěvnost, konverzní poměry ani obchodní
+                  výsledky.
+                </p>
+                <p>
+                  Objednatel bere na vědomí, že přesnost měřených dat v
+                  nasazených analytických nástrojích může být ovlivněna faktory
+                  mimo kontrolu Poskytovatele (např. nastavením souhlasů
+                  uživatelů, adblock nástroji nebo změnami platforem třetích
+                  stran).
                 </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                9. Odstoupení od smlouvy
+                10. Záruka a podpora
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  <strong className="text-foreground">9.1 Objednatel:</strong>{" "}
-                  Objednatel může odstoupit od smlouvy kdykoliv s tím, že je
-                  povinen uhradit práce provedené do data odstoupení.
+                  U projektových služeb (Vývoj webu, Redesign stránek)
+                  Poskytovatel poskytuje záruku na funkčnost řešení po dobu 30
+                  dnů od předání, pokud není dohodnuto jinak.
                 </p>
                 <p>
-                  <strong className="text-foreground">9.2 Poskytovatel:</strong>{" "}
-                  Poskytovatel může odstoupit od smlouvy při opakovaném
-                  nesplnění závazků Objednatele.
+                  U průběžných služeb (Vylepšení SEO, Webová analytika,
+                  Optimalizace webu) Poskytovatel odpovídá za odborné provedení
+                  sjednaných činností, nikoli za konkrétní výsledek ovlivněný
+                  externími faktory.
+                </p>
+                <p>
+                  Záruka se nevztahuje na nové požadavky, rozšíření funkcí,
+                  zásahy třetích stran ani změny provedené mimo rámec sjednané
+                  správy. Pozáruční podpora, údržba a další rozvoj jsou
+                  poskytovány na základě samostatné dohody.
                 </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                10. Závěrečná ustanovení
+                11. Odstoupení od smlouvy a ukončení
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  Poskytovatel si vyhrazuje právo změnit tyto obchodní podmínky.
-                  Změny budou zveřejněny na těchto stránkách. Pro již
-                  probíhající projekty platí podmínky platné v době uzavření
-                  smlouvy.
+                  Objednatel může spolupráci ukončit i bez uvedení důvodu; v
+                  takovém případě je povinen uhradit již provedené práce, účelně
+                  vynaložené náklady a objednané externí služby.
                 </p>
                 <p>
-                  Ochrana osobních údajů, zpracování údajů z kontaktního
-                  formuláře a pravidla pro cookies se řídí samostatným
-                  dokumentem „Ochrana osobních údajů“. Souhlas se zpracováním
-                  údajů v kontaktním formuláři slouží pouze pro vyřízení
-                  poptávky a je oddělen od volby cookies.
+                  Poskytovatel může spolupráci ukončit zejména při opakovaném
+                  porušení platebních povinností nebo při neposkytování potřebné
+                  součinnosti ze strany Objednatele.
                 </p>
               </div>
             </section>
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                11. Kontakt
+                12. Závěrečná ustanovení
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  Pro dotazy k obchodním podmínkám mě neváhejte kontaktovat:
+                  Poskytovatel je oprávněn Podmínky jednostranně měnit; pro již
+                  potvrzené zakázky platí znění účinné v okamžiku potvrzení
+                  nabídky, pokud se strany nedohodnou jinak.
                 </p>
-                <div className="rounded-xl border border-brand-secondary/30 bg-linear-to-br from-brand-secondary/10 to-brand-primary/10 p-6">
-                  <p className="font-semibold text-foreground">
-                    Email:{" "}
-                    <a href="mailto:info@danielkroupa.cz">
-                      info@danielkroupa.cz
-                    </a>
-                  </p>
-                  <p className="font-semibold text-foreground">
-                    Telefon: <a href="tel:+420605465600">+420 605 465 600</a>
-                  </p>
-                </div>
+                <p>
+                  Právní vztahy neupravené těmito Podmínkami se řídí právním
+                  řádem České republiky. Spory budou strany řešit přednostně
+                  smírně.
+                </p>
+                <p>Tyto Podmínky nabývají účinnosti dnem 04.04.2026.</p>
               </div>
             </section>
           </div>
