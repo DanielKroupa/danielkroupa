@@ -24,7 +24,6 @@ export function buildAdminInquiryEmail(
     "Zpráva:",
     payload.messageBox,
     "",
-    "Souhlas se zpracováním údajů: Ano",
   ].join("\n");
 
   return { subject, text };
