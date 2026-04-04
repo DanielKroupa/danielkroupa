@@ -39,6 +39,9 @@ export function buildClientConfirmationEmail(
     "",
     "děkujeme za poptávku. Brzy se vám ozveme s dalšími informacemi.",
     "",
+    "S pozdravem,",
+    "Daniel Kroupa",
+    "",
     "Shrnutí vaší poptávky:",
     `Preferovaná služba: ${readField(payload.preferredService)}`,
     `Telefon: ${readField(payload.phone)}`,
@@ -46,8 +49,6 @@ export function buildClientConfirmationEmail(
     "Vaše zpráva:",
     payload.messageBox,
     "",
-    "S pozdravem,",
-    "Daniel Kroupa",
   ].join("\n");
 
   return { subject, text };
