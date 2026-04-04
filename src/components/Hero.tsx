@@ -2,10 +2,18 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
 import { useSectionNavigation } from "#/hooks/useSectionNavigation";
+import {
+  AvailabilityStatus,
+  type AvailabilityState,
+} from "#/components/AvailabilityStatus";
 
 import { Image } from "@unpic/react";
 
-export function HeroSection() {
+type HeroSectionProps = {
+  availabilityStatus: AvailabilityState;
+};
+
+export function HeroSection({ availabilityStatus }: HeroSectionProps) {
   const { trackSelectContent } = useAnalyticsTracking();
   const { scrollToSection } = useSectionNavigation();
 
@@ -122,6 +130,15 @@ export function HeroSection() {
                 </div>
                 <div>Spokojených klientů</div>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.1 }}
+              className="mt-6"
+            >
+              <AvailabilityStatus status={availabilityStatus} />
             </motion.div>
           </motion.div>
 

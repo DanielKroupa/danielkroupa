@@ -45,10 +45,10 @@ export function AvailabilityStatus({ status }: AvailabilityStatusProps) {
 
   return (
     <section
-      className="relative py-3 md:py-4 w-fit mx-auto"
+      className="relative py-3 md:py-4 w-fit mx-auto md:mx-0"
       aria-label="Dostupnost pro nové projekty"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
