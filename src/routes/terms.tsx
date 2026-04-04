@@ -45,7 +45,7 @@ export function TermsPage() {
         />
       </div>
 
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="container relative z-10 mx-auto md:px-6 px-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export function TermsPage() {
               </p>
             </div>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 1. Úvodní ustanovení
               </h2>
@@ -100,15 +100,15 @@ export function TermsPage() {
                   fyzická nebo právnická osoba, která si služby objedná na
                   základě nabídky, objednávky nebo smlouvy.
                 </p>
+                <p>
+                  <strong className="text-foreground"></strong> Objednatel
+                  potvrzuje, že se s těmito obchodními podmínkami obeznámil a
+                  vyjadřuje svůj souhlas s jejich zněním.
+                </p>
               </div>
-              <p>
-                <strong className="text-foreground"></strong> Objednatel
-                potvrzuje, že se s těmito obchodními podmínkami obeznámil a
-                vyjadřuje svůj souhlas s jejich zněním.
-              </p>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 2. Rozsah poskytovaných služeb
               </h2>
@@ -139,7 +139,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 3. Uzavření spolupráce a podklady
               </h2>
@@ -166,7 +166,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 4. Cena a platební podmínky
               </h2>
@@ -221,7 +221,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 5. Harmonogram a předání
               </h2>
@@ -250,7 +250,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 6. Změnové požadavky
               </h2>
@@ -267,7 +267,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 7. Práva a povinnosti smluvních stran
               </h2>
@@ -303,7 +303,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 8. Autorská práva a licence
               </h2>
@@ -334,7 +334,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 9. Odpovědnost a omezení odpovědnosti
               </h2>
@@ -365,7 +365,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 10. Záruka a podpora
               </h2>
@@ -390,7 +390,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 11. Odstoupení od smlouvy a ukončení
               </h2>
@@ -408,7 +408,7 @@ export function TermsPage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+            <section className="rounded-2xl border border-border bg-card/70 md:p-8 p-6 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
                 12. Závěrečná ustanovení
               </h2>
