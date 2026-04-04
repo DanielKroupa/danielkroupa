@@ -12,7 +12,7 @@ export function ServiceDetailTemplate({
 }: ServiceDetailTemplateProps) {
   return (
     <main className="min-h-screen bg-background pt-8 pb-16">
-      <div className="container mx-auto md:px-6 px-3rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
+      <div className="container mx-auto md:px-6 px-3 rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
         <section className="mx-auto max-w-5xl rounded-2xl border border-border bg-linear-to-br from-brand-surface to-brand-surface-2 p-4 md:p-10">
           <p className="mb-4 text-sm tracking-[0.2em] text-brand-secondary uppercase">
             Služby
