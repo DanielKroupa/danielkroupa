@@ -15,14 +15,14 @@ export function Footer() {
     <footer className="border-t border-border bg-background py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
-          <div>
+          <div className="my-2">
             <Image
-              src="/logo192.png"
+              src="logo.svg"
               width={50}
               height={50}
               alt="Daniel Kroupa Logo"
             />
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mt-2 ">
               Moderní webové řešení pro vaše podnikání.
             </p>
           </div>
