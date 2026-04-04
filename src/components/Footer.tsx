@@ -17,7 +17,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="my-2">
             <Image
-              src="logo.svg"
+              src="/logo.svg"
               width={50}
               height={50}
               alt="Daniel Kroupa Logo"
