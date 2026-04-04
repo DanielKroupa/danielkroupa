@@ -41,7 +41,7 @@ const projects: Project[] = [
     description:
       "Díky spolupráci s klientem se přetvořila jeho vize mít online vizitku na funkční a moderní webovou prezentaci. Web nabízí psychologické služby, poradenství a možnost využití služeb formou objednávkového formuláře.",
     image: "/img/lukas-rihacek-preview.webp",
-    tech: ["Vývoj webu", "Design", "SEO", "Responzivita"],
+    tech: ["Vývoj webu", "Design", "SEO", "Správa obsahu", "Responzivita"],
   },
 ];
 

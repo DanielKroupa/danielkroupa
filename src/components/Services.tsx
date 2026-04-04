@@ -124,7 +124,7 @@ export function ServicesSection() {
             onClick={() => scrollToSection("kontakt")}
             className="rounded-lg cursor-pointer bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
           >
-            Poptat projekt
+            Poptat službu
           </button>
         </motion.div>
       </div>

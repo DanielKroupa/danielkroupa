@@ -237,11 +237,20 @@ export function PrivacyDialog({ onClose }: { onClose: () => void }) {
                   zásad ochrany osobních údajů, neváhejte nás kontaktovat:
                 </p>
                 <div className="rounded-xl border border-brand-secondary/30 bg-linear-to-br from-brand-secondary/10 to-brand-primary/10 p-5">
-                  <p className="font-semibold text-foreground">
-                    Email: info@webdev.cz
+                  <p className="font-normal text-foreground">
+                    Email:{" "}
+                    <a
+                      href="mailto:info@danielkroupa.cz"
+                      className="font-semibold"
+                    >
+                      info@danielkroupa.cz
+                    </a>
                   </p>
-                  <p className="font-semibold text-foreground">
-                    Telefon: +420 123 456 789
+                  <p className="font-normal text-foreground">
+                    Telefon:{" "}
+                    <a href="tel:+420605465600" className="font-semibold">
+                      +420 605 465 600
+                    </a>
                   </p>
                 </div>
               </div>
