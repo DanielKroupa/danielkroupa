@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
@@ -143,12 +143,13 @@ export function FAQPage() {
               Neváhejte mě kontaktovat s jakýmkoliv dotazem. Rád vám odpovím a
               pomohu s vašim projektem.
             </p>
-            <a
-              href="/#kontakt"
+            <Link
+              to="/"
+              hash="kontakt"
               className="inline-block rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
             >
               Kontaktovat
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

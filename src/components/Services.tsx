@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Code, Palette, Zap, Search, Settings, ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import { useSectionNavigation } from "#/hooks/useSectionNavigation";
 
 const services = [
   {
@@ -51,6 +52,8 @@ const services = [
 ];
 
 export function ServicesSection() {
+  const { scrollToSection } = useSectionNavigation();
+
   return (
     <section
       id="sluzby"
@@ -118,16 +121,7 @@ export function ServicesSection() {
           className="text-center mt-12"
         >
           <button
-            onClick={() => {
-              const element = document.getElementById("kontakt");
-              if (element) {
-                const offset = 80;
-                const elementPosition = element.getBoundingClientRect().top;
-                const offsetPosition =
-                  elementPosition + window.pageYOffset - offset;
-                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-              }
-            }}
+            onClick={() => scrollToSection("kontakt")}
             className="rounded-lg cursor-pointer bg-brand-primary px-8 py-4 text-primary-foreground shadow-lg shadow-brand-primary/30 transition-all hover:scale-105 hover:bg-brand-primary-strong"
           >
             Poptat projekt

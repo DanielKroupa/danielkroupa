@@ -1,33 +1,15 @@
-import { Link, useLocation } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { useCookieConsent } from "#/hooks/useCookieConsent";
 import { usePrivacyOverlay } from "#/hooks/usePrivacyOverlay";
+import { useSectionNavigation } from "#/hooks/useSectionNavigation";
 
 import { Image } from "@unpic/react";
 
 export function Footer() {
-  const location = useLocation();
+  const { scrollToSection } = useSectionNavigation();
   const { openSettings } = useCookieConsent();
   const { openPrivacy } = usePrivacyOverlay();
-
-  const scrollToSection = (id: string) => {
-    if (location.pathname !== "/") {
-      window.location.href = `/#${id}`;
-      return;
-    }
-
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <footer className="border-t border-border bg-background py-12">

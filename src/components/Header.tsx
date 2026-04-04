@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "@tanstack/react-router";
 import { Navbar } from "./Navbar";
+import { useSectionNavigation } from "#/hooks/useSectionNavigation";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { scrollToSection } = useSectionNavigation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,24 +22,8 @@ export function Header() {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  const scrollToSection = (id: string) => {
-    if (location.pathname !== "/") {
-      window.location.href = `/#${id}`;
-      return;
-    }
-
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-
+  const handleScrollToSection = (id: string) => {
+    scrollToSection(id);
     setIsMobileMenuOpen(false);
   };
 
@@ -52,7 +38,7 @@ export function Header() {
           isMobileMenuOpen={isMobileMenuOpen}
           onToggleMobileMenu={() => setIsMobileMenuOpen((open) => !open)}
           onCloseMobileMenu={() => setIsMobileMenuOpen(false)}
-          onScrollToSection={scrollToSection}
+          onScrollToSection={handleScrollToSection}
         />
       </header>
 

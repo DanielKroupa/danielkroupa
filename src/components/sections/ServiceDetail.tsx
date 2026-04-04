@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Link } from "@tanstack/react-router";
 
 type ServiceDetailTemplateProps = {
   title: string;
@@ -22,12 +23,13 @@ export function ServiceDetailTemplate({
 
           {children}
 
-          <a
-            href="/#kontakt"
+          <Link
+            to="/"
+            hash="kontakt"
             className="mt-8 inline-block rounded-lg bg-brand-primary px-8 py-4 text-primary-foreground transition-all hover:scale-105 hover:bg-brand-primary-strong"
           >
             Nezávazně poptat službu
-          </a>
+          </Link>
         </section>
       </div>
     </main>

@@ -79,8 +79,8 @@ export function TermsPage() {
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
                   Tyto obchodní podmínky upravují vztahy mezi poskytovatelem
-                  služeb (dále jen "Poskytovatel") a klientem (dále jen
-                  "Klient") při poskytování služeb v oblasti vývoje webových
+                  služeb (dále jen "Poskytovatel") a Objednatelem (dále jen
+                  "Objednatel") při poskytování služeb v oblasti vývoje webových
                   stránek a aplikací.
                 </p>
               </div>
@@ -91,7 +91,10 @@ export function TermsPage() {
                 2. Předmět smlouvy
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
-                <p>Předmětem smlouvy je poskytování následujících služeb:</p>
+                <p>
+                  Předmětem smlouvy je poskytnutí některé z následujících
+                  služeb:
+                </p>
                 <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
                   <li>Vývoj webových stránek a aplikací na míru</li>
                   <li>Redesign existujících webových řešení</li>
@@ -121,18 +124,18 @@ export function TermsPage() {
                 </p>
                 <p>
                   <strong className="text-foreground">3.3 Vývoj:</strong>{" "}
-                  Poskytovatel průběžně informuje Klienta o stavu projektu a
+                  Poskytovatel průběžně informuje Objednatele o stavu projektu a
                   předkládá návrhy ke schválení.
                 </p>
                 <p>
                   <strong className="text-foreground">3.4 Testování:</strong>{" "}
-                  Před spuštěním je projekt důkladně otestován. Klient má
+                  Před spuštěním je projekt důkladně otestován. Objednatel má
                   možnost vyjádřit připomínky.
                 </p>
                 <p>
                   <strong className="text-foreground">3.5 Předání:</strong> Po
                   úspěšném testování a schválení je projekt spuštěn a předán
-                  Klientovi.
+                  Objednateli.
                 </p>
               </div>
             </section>
@@ -144,8 +147,8 @@ export function TermsPage() {
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
                   <strong className="text-foreground">4.1 Cena:</strong> Cena je
-                  stanovena individuálně na základě rozsahu projektu a je
-                  uvedena v cenové nabídce.
+                  stanovena individuálně na základě rozsahu projektu, je uvedena
+                  v cenové nabídce a předána Objednateli.
                 </p>
                 <p>
                   <strong className="text-foreground">4.2 Platby:</strong>{" "}
@@ -170,14 +173,14 @@ export function TermsPage() {
 
             <section className="rounded-2xl border border-border bg-card/70 p-8 backdrop-blur-sm">
               <h2 className="mb-4 text-3xl font-bold text-foreground">
-                5. Povinnosti Klienta
+                5. Povinnosti Objednatele
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
-                <p>Klient se zavazuje:</p>
+                <p>Objednatel se zavazuje:</p>
                 <ul className="list-inside list-disc space-y-2 text-foreground/80 marker:text-brand-secondary">
                   <li>
                     Poskytnout včas všechny potřebné podklady (texty, loga,
-                    fotografie)
+                    fotografie) pokud není domluveno jinak.
                   </li>
                   <li>Reagovat na návrhy a dotazy v přiměřené době</li>
                   <li>Zaplatit dohodnutou cenu dle platebních podmínek</li>
@@ -198,7 +201,7 @@ export function TermsPage() {
                   <li>Zajistit funkčnost a otestování řešení</li>
                   <li>Poskytnout základní zaškolení a dokumentaci</li>
                   <li>
-                    Zachovávat mlčenlivost o obchodních informacích Klienta
+                    Zachovávat mlčenlivost o obchodních informacích Objednatele
                   </li>
                 </ul>
               </div>
@@ -212,7 +215,7 @@ export function TermsPage() {
                 <p>
                   <strong className="text-foreground">7.1 Zdrojový kód:</strong>{" "}
                   Po úplném zaplacení ceny přechází majetková práva k
-                  vytvořenému dílu na Klienta.
+                  vytvořenému dílu na Poskytovatele.
                 </p>
                 <p>
                   <strong className="text-foreground">7.2 Portfolio:</strong>{" "}
@@ -231,7 +234,8 @@ export function TermsPage() {
                 <p>
                   <strong className="text-foreground">8.1 Záruka:</strong>{" "}
                   Poskytovatel poskytuje záruku na funkčnost vytvořeného řešení
-                  po dobu 30 dnů od předání.
+                  po dobu 30 dnů od předání. U větších a složitějších projektů
+                  je doba záruky posuzována a navrhnuta individuálně.
                 </p>
                 <p>
                   <strong className="text-foreground">8.2 Podpora:</strong>{" "}
@@ -247,14 +251,14 @@ export function TermsPage() {
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
                 <p>
-                  <strong className="text-foreground">9.1 Klient:</strong>{" "}
-                  Klient může odstoupit od smlouvy kdykoliv s tím, že je povinen
-                  uhradit práce provedené do data odstoupení.
+                  <strong className="text-foreground">9.1 Objednatel:</strong>{" "}
+                  Objednatel může odstoupit od smlouvy kdykoliv s tím, že je
+                  povinen uhradit práce provedené do data odstoupení.
                 </p>
                 <p>
                   <strong className="text-foreground">9.2 Poskytovatel:</strong>{" "}
                   Poskytovatel může odstoupit od smlouvy při opakovaném
-                  nesplnění závazků Klienta.
+                  nesplnění závazků Objednatele.
                 </p>
               </div>
             </section>
@@ -285,13 +289,18 @@ export function TermsPage() {
                 11. Kontakt
               </h2>
               <div className="space-y-4 leading-relaxed text-brand-text-soft">
-                <p>Pro dotazy k obchodním podmínkám nás kontaktujte:</p>
+                <p>
+                  Pro dotazy k obchodním podmínkám mě neváhejte kontaktovat:
+                </p>
                 <div className="rounded-xl border border-brand-secondary/30 bg-linear-to-br from-brand-secondary/10 to-brand-primary/10 p-6">
                   <p className="font-semibold text-foreground">
-                    Email: info@webdev.cz
+                    Email:{" "}
+                    <a href="mailto:info@danielkroupa.cz">
+                      info@danielkroupa.cz
+                    </a>
                   </p>
                   <p className="font-semibold text-foreground">
-                    Telefon: +420 123 456 789
+                    Telefon: <a href="tel:+420605465600">+420 605 465 600</a>
                   </p>
                 </div>
               </div>

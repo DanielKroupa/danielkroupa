@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Check } from "lucide-react";
 import { useAnalyticsTracking } from "#/hooks/useAnalyticsTracking";
+import { useSectionNavigation } from "#/hooks/useSectionNavigation";
 
 const pricingOptions = [
   {
@@ -51,17 +52,11 @@ const pricingOptions = [
 
 export function PricingSection() {
   const { trackSelectContent } = useAnalyticsTracking();
+  const { scrollToSection } = useSectionNavigation();
 
   const scrollToContact = (itemId: string) => {
     trackSelectContent(itemId, "cta_button");
-
-    const element = document.getElementById("kontakt");
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-    }
+    scrollToSection("kontakt");
   };
 
   return (

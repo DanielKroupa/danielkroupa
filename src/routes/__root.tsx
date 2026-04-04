@@ -7,6 +7,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { RootNotFound } from "../components/RootNotFound";
 import { CookieConsentProvider } from "../hooks/useCookieConsent";
+import { useHashSectionScroll } from "../hooks/useHashSectionScroll";
 import { PrivacyOverlayLayer } from "../components/PrivacyOverlay";
 import { PrivacyOverlayProvider } from "../hooks/usePrivacyOverlay";
 
@@ -37,6 +38,8 @@ export const Route = createRootRoute({
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
+  useHashSectionScroll();
+
   return (
     <html lang="cs" suppressHydrationWarning>
       <head>
